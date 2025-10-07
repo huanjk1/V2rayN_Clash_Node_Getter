@@ -43,23 +43,23 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
 - cipher: aes-256-cfb
-  name: 🇮🇳_IN_印度
+  name: 未知
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 未知_1
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.79
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 134.209.147.198
+  server: 91.132.94.200
   type: ss
 - cipher: aes-256-cfb
   name: 🇬🇧_GB_英国
@@ -70,16 +70,38 @@ proxies:
   server: 62.100.205.48
   type: ssr
 - cipher: aes-256-cfb
-  name: 未知_1
+  name: 未知_2
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.79
+  server: 103.186.154.146
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪_DE_德国_2
+  name: 未知_3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.76
+  type: ss
+- name: 🇺🇸_US_美国->🏳️_unKnow_未知
+  network: ws
+  password: YwuvGJk36B
+  port: 2053
+  server: creativecommons.org
+  sni: kotlet.arshiacomplus.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /yamtekodasayahhh
+- cipher: aes-256-cfb
+  name: 未知_4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.77
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇮🇳_IN_印度
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 46.183.184.60
+  server: 134.209.147.198
   type: ss
 proxy-groups:
 - name: 🚀 节点选择
@@ -87,21 +109,29 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -111,44 +141,60 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -172,11 +218,15 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇮🇳_IN_印度
-  - 🇬🇧_GB_英国
+  - 未知
   - 未知_1
-  - 🇩🇪_DE_德国_2
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇬🇧_GB_英国
+  - 未知_2
+  - 未知_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 未知_4
+  - 🇮🇳_IN_印度
   type: select
 rule-providers:
   Apple:
