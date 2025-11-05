@@ -42,66 +42,45 @@ proxies:
   type: trojan
 - name: 🇨🇳_CN_中国_1
   network: tcp
-  password: BxceQaOe
-  port: 4556
-  server: 36.151.192.242
-  skip-cert-verify: true
+  password: bca467b8c15211d189008a93c7519d3b
+  port: 443
+  server: 58.152.53.42
+  sni: www.nintendogames.net
   type: trojan
 - name: 🇨🇳_CN_中国_2
-  network: tcp
-  password: BxceQaOe
-  port: 194
-  server: 36.151.192.242
-  skip-cert-verify: true
-  type: trojan
-- name: 🇨🇳_CN_中国_3
-  network: tcp
-  password: BxceQaOe
-  port: 4492
-  server: 36.150.215.236
-  skip-cert-verify: true
-  type: trojan
-- name: 🇨🇳_CN_中国_4
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
   port: 2283
   server: 117.172.176.24
   sni: www.nintendogames.net
   type: trojan
-- name: 🇨🇳_CN_中国_5
-  network: tcp
-  password: bca467b8c15211d189008a93c7519d3b
-  port: 1332
-  server: 117.172.176.24
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇨🇳_CN_中国_6
-  network: tcp
-  password: BxceQaOe
-  port: 51825
-  server: 36.150.215.197
-  skip-cert-verify: true
-  type: trojan
-- name: 🇨🇳_CN_中国_7
-  network: tcp
-  password: BxceQaOe
-  port: 53743
-  server: 36.151.251.47
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: 🇺🇸_US_美国
-  network: ws
-  port: 443
-  server: 69.84.182.18
-  servername: cdn-node-oss-63.paofu.de
+  network: tcp
+  port: 36666
+  reality-opts:
+    public-key: cqCSxloJscJ3ZrNUlkSKkUFZ7SZ6vzQNszGolW_o7HY
+    short-id: 6da03029
+  server: hk3.cv1168.com
+  servername: www.python.org
   tls: true
   type: vless
-  uuid: a25ff90c-964c-485a-b72a-858864a27dc0
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-63.paofu.de
-    path: /profile/sharenode
+  uuid: aae56c24-7511-4526-9708-3fcbd804253c
+- name: 🇨🇳_CN_中国_3
+  network: tcp
+  password: BxceQaOe
+  port: 4556
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- name: 🇨🇳_CN_中国_4
+  network: tcp
+  password: BxceQaOe
+  port: 194
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
   name: 🇺🇸_US_美国_1
   network: ws
@@ -115,102 +94,142 @@ proxies:
     headers:
       Host: om1.omidsuccess.uk
     path: /containers/de
-- name: 🇮🇷_IR_伊朗
-  password: 70f44486-cda5-4750-9bf5-ca8826ee9bcc
-  port: 11112
-  server: us2.oxdtangx.top
-  skip-cert-verify: true
-  sni: us2.oxdtangx.top
-  type: hysteria2
-- name: 🇺🇸_US_美国_2
-  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-  port: 1743
-  server: 61f04f6d-t4v9c0-t5amrp-b4pt.la.shifen.uk
-  type: hysteria2
+- client-fingerprint: chrome
+  name: 🇺🇸_US_美国_2
+  network: ws
+  port: 443
+  server: 172.66.47.63
+  servername: aDD-1cV.pAGeS.Dev
+  tls: true
+  type: vless
+  uuid: 2836c061-ea09-45e5-a98e-4ca478e744b0
+  ws-opts:
+    headers:
+      Host: aDD-1cV.pAGeS.Dev
+    path: /f2GYY0YixkpPeMtx/Y2RuLWIxMDAueG4tLWI2Z2FjLmV1Lm9yZw
 - name: 🇺🇸_US_美国_3
+  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  port: 1743
+  server: fecc1dc4-t4v9c0-t5ht86-dnss.la.shifen.uk
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 德国 V2CROSS.COM
+  network: ws
+  port: 80
+  server: 77.37.33.67
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸_US_美国_4
+  network: tcp
+  port: 17836
+  server: usvless.yydzx.xyz
+  servername: usvless.yydzx.xyz
+  tls: true
+  type: vless
+  uuid: 4e084535-bd62-458b-84a2-a0dc57c957aa
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: 80
+  server: 104.18.240.238
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- name: 🇺🇸_US_美国_5
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
   server: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
   type: hysteria2
-- name: 🇺🇸_US_美国_4
-  password: 712bdc36-24be-11ee-be53-f23c9313b177
-  port: 1743
-  server: fe1d6996-t4v9c0-tcl9of-5fdt.la.shifen.uk
-  type: hysteria2
-- name: 🇮🇷_IR_伊朗_1
-  password: e2c4b8ed-5968-4c23-aeb5-60551c09c9a6
-  port: 2222
-  server: mg1.xinlancloud.top
-  skip-cert-verify: true
-  sni: mg1.xinlancloud.top
-  type: hysteria2
-- name: 🇺🇸_US_美国_5
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 1743
-  server: eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk
-  type: hysteria2
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 🇮🇹 意大利 01
-  network: tcp
-  port: 30805
-  server: v5.heduian.link
-  servername: v5.heduian.link
+  name: 🇺🇸 美国 454
+  network: ws
+  port: 80
+  server: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
+  servername: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-opts:
+    headers:
+      Host: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
+    path: /e7JS5ETJeA85VyjPCYXwETL
 - name: 🇺🇸_US_美国_6
-  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-  port: 1743
-  server: dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk
-  type: hysteria2
-- name: 🇺🇸_US_美国_7
-  password: bf47336b-1642-4db6-b1fe-8401e0f2405e
-  port: 11112
-  server: yg1.oxdtangx.top
+  password: 3c24bd4c-72a2-4036-93cf-6837e131d403
+  port: 18785
+  server: 192.238.232.130
   skip-cert-verify: true
-  sni: yg1.oxdtangx.top
+  sni: www.bing.com
   type: hysteria2
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_8
-  network: tcp
-  port: 993
-  reality-opts:
-    public-key: GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA
-  server: 155.212.110.2
-  servername: speed.cloudflare.com
-  tls: true
+- encryption: none
+  name: 🇺🇸_US_美国_7
+  network: ws
+  port: 80
+  server: 104.18.255.7
+  servername: vpn13.sakeva2327.workers.dev
   type: vless
-  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
+  uuid: ac90a749-1b0d-4978-a767-ab07b0f3f98f
+  ws-opts:
+    headers:
+      Host: vpn13.sakeva2327.workers.dev
+    path: /
+- fingerprint: random
+  name: 🇺🇸_US_美国_8
+  network: ws
+  password: trojan
+  port: 443
+  server: ip.sb
+  sni: nixian.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nixian.pages.dev
+    path: /?ed=2560/?Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-
 - alterId: 0
   cipher: auto
-  name: '%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%97%F0%9D%92%91%F0%9D%92%8F-%40bolbolservice'
-  network: tcp
-  port: 2060
-  server: ksadk/23.korosh.shop
+  name: 🇩🇪 德国 33
+  network: ws
+  port: 80
+  server: 141.101.121.250
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   type: vmess
-  uuid: 1648bc92-d210-4d17-9174-710231d5b23e
-- cipher: chacha20-ietf
-  name: 🇨🇳_CN_中国_8
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
 - alterId: 0
   cipher: auto
-  name: AU🇦🇺 | arda101.ardaserver.site-34167 | 275.19ms
-  network: tcp
-  port: 34167
-  server: arda101.ardaserver.site
+  name: DE_555fe_0004
+  network: ws
+  port: 80
+  server: 77.37.33.108
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   type: vmess
-  uuid: 571cd4a3-e2af-4bab-a6f5-3b5906afc111
-- name: 🇮🇷_IR_伊朗_2
-  password: 16877559-98a8-4f8b-906c-cecad0867c0d
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /
+- name: 🇺🇸_US_美国_9
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 1743
+  server: 67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk
   type: hysteria2
 proxy-groups:
 - name: 🚀 节点选择
@@ -220,27 +239,23 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国_1
   - 🇨🇳_CN_中国_2
+  - 🇺🇸_US_美国
   - 🇨🇳_CN_中国_3
   - 🇨🇳_CN_中国_4
-  - 🇨🇳_CN_中国_5
-  - 🇨🇳_CN_中国_6
-  - 🇨🇳_CN_中国_7
-  - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国_2
   - 🇺🇸_US_美国_3
+  - 德国 V2CROSS.COM
   - 🇺🇸_US_美国_4
-  - 🇮🇷_IR_伊朗_1
+  - 🇺🇸 美国 CloudFlare节点
   - 🇺🇸_US_美国_5
-  - 🇮🇹 意大利 01
+  - 🇺🇸 美国 454
   - 🇺🇸_US_美国_6
   - 🇺🇸_US_美国_7
   - 🇺🇸_US_美国_8
-  - '%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%97%F0%9D%92%91%F0%9D%92%8F-%40bolbolservice'
-  - 🇨🇳_CN_中国_8
-  - AU🇦🇺 | arda101.ardaserver.site-34167 | 275.19ms
-  - 🇮🇷_IR_伊朗_2
+  - 🇩🇪 德国 33
+  - DE_555fe_0004
+  - 🇺🇸_US_美国_9
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -248,27 +263,23 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国_1
   - 🇨🇳_CN_中国_2
+  - 🇺🇸_US_美国
   - 🇨🇳_CN_中国_3
   - 🇨🇳_CN_中国_4
-  - 🇨🇳_CN_中国_5
-  - 🇨🇳_CN_中国_6
-  - 🇨🇳_CN_中国_7
-  - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国_2
   - 🇺🇸_US_美国_3
+  - 德国 V2CROSS.COM
   - 🇺🇸_US_美国_4
-  - 🇮🇷_IR_伊朗_1
+  - 🇺🇸 美国 CloudFlare节点
   - 🇺🇸_US_美国_5
-  - 🇮🇹 意大利 01
+  - 🇺🇸 美国 454
   - 🇺🇸_US_美国_6
   - 🇺🇸_US_美国_7
   - 🇺🇸_US_美国_8
-  - '%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%97%F0%9D%92%91%F0%9D%92%8F-%40bolbolservice'
-  - 🇨🇳_CN_中国_8
-  - AU🇦🇺 | arda101.ardaserver.site-34167 | 275.19ms
-  - 🇮🇷_IR_伊朗_2
+  - 🇩🇪 德国 33
+  - DE_555fe_0004
+  - 🇺🇸_US_美国_9
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎯 全球直连
@@ -290,27 +301,23 @@ proxy-groups:
   - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国_1
   - 🇨🇳_CN_中国_2
+  - 🇺🇸_US_美国
   - 🇨🇳_CN_中国_3
   - 🇨🇳_CN_中国_4
-  - 🇨🇳_CN_中国_5
-  - 🇨🇳_CN_中国_6
-  - 🇨🇳_CN_中国_7
-  - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国_2
   - 🇺🇸_US_美国_3
+  - 德国 V2CROSS.COM
   - 🇺🇸_US_美国_4
-  - 🇮🇷_IR_伊朗_1
+  - 🇺🇸 美国 CloudFlare节点
   - 🇺🇸_US_美国_5
-  - 🇮🇹 意大利 01
+  - 🇺🇸 美国 454
   - 🇺🇸_US_美国_6
   - 🇺🇸_US_美国_7
   - 🇺🇸_US_美国_8
-  - '%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%83%F0%9D%92%90%F0%9D%92%8D%F0%9D%92%97%F0%9D%92%91%F0%9D%92%8F-%40bolbolservice'
-  - 🇨🇳_CN_中国_8
-  - AU🇦🇺 | arda101.ardaserver.site-34167 | 275.19ms
-  - 🇮🇷_IR_伊朗_2
+  - 🇩🇪 德国 33
+  - DE_555fe_0004
+  - 🇺🇸_US_美国_9
   type: select
 rule-providers:
   BanAD:
