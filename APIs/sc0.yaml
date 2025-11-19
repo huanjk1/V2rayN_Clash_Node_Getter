@@ -32,22 +32,57 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US_156
+- alpn:
+  - http/1.1
+  fingerprint: chrome
+  name: 🇺🇸_US_美国
   network: ws
-  port: 52511
-  server: aflzzul.meiquankongjian.com
-  servername: aflzzul.meiquankongjian.com
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
+  port: 443
+  server: 54d-bd0d-c3f111d0b879.664.qzz.io
+  sni: 54D-bD0D-c3F111D0b879.664.Qzz.Io
+  tls: true
+  type: trojan
   ws-opts:
     headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
+      Host: 54d-Bd0d-c3f111d0b879.664.QZZ.iO
+    path: /E2JXJM5geneWfr9noOhn
+- encryption: none
+  name: 🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  type: vless
+  uuid: fee15267-4f05-4f6c-a346-e7fe02be0614
+  ws-opts:
+    headers:
+      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+- name: 🇨🇳_CN_中国
+  network: tcp
+  password: a0d6e36b-0233-4985-bc99-db6ed83b8dd8
+  port: 20026
+  server: krhtybay.catcat321.com
+  skip-cert-verify: true
+  sni: iepl.ruz1.cat.bilibili.com
+  type: trojan
+- encryption: none
+  name: 🇺🇸_US_美国_2
+  network: ws
+  port: 443
+  server: norman.ns.cloudflare.com
+  servername: 638989641550992554.sonata-amshx.info
+  tls: true
+  type: vless
+  uuid: 53f0bca8-f170-4ef7-8031-c7d441189dbf
+  ws-opts:
+    headers:
+      Host: 638989641550992554.sonata-amshx.info
+    path: /cahttingws
 - alterId: 0
   cipher: auto
-  name: 🇰🇷KR-125.134.123.178-1122
+  name: 🇰🇷KR-125.134.123.178-1031
   network: ws
   port: 50001
   server: 125.134.123.178
@@ -59,101 +94,109 @@ proxies:
     headers:
       Host: aa.nbee.pp.ua
     path: /qq
-- name: 🇨🇳_CN_中国
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 219.79.165.55
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-- name: 🇺🇸_US_美国
+- encryption: none
+  name: 🇺🇸_US_美国_3
   network: ws
-  password: 559b90ec-b620-4255-80a5-c64b8d3ffe6c
-  port: 8443
-  server: 69.84.182.18
-  sni: cdn-node-oss-64.paofu.de
-  type: trojan
+  port: 80
+  server: 172.66.156.81
+  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+  type: vless
+  uuid: fee15267-4f05-4f6c-a346-e7fe02be0614
   ws-opts:
     headers:
-      Host: cdn-node-oss-64.paofu.de
-    path: /profile/sharenode
+      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz.
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
 - alpn:
   - http/1.1
   fingerprint: chrome
-  name: 🇺🇸_US_美国_1
+  name: 🇺🇸_US_美国_4
   network: ws
-  password: bb824a22-b7ce-427b-9ed6-1adf0751da02
+  password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f
   port: 443
-  server: 107.174.82.102.sslip.io
-  sni: 107.174.82.102.sslip.io
+  server: a76-4179-8a78-c8b78b3c00cb.664.qzz.io
+  sni: A76-4179-8a78-c8B78B3C00Cb.664.QZz.iO
   tls: true
   type: trojan
   ws-opts:
     headers:
-      Host: 107.174.82.102.sslip.io
-    path: /gXKGj8a1tp1nNbZEcRugowKV
+      Host: a76-4179-8a78-c8B78B3C00cB.664.qzz.Io
+    path: /E2JXJM5geneWfr9noOhn
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪_DE_德国
+  name: 🇺🇸_US_美国_5
   network: tcp
-  port: 28924
+  port: 30268
   reality-opts:
-    public-key: 4Qz4G28t9qnfp9i8prlehAmCaqI7w56OKuHgpfytXH8
-    short-id: 5ff1a443
-  server: beast-masters.fonixapp.org
-  servername: expedia.com
+    public-key: GyvksSpuOucs7XsCfiq2yRn3cxVN_Y8b3Zippb_mYCM
+    short-id: 50bcccfb
+    spider-x: /
+  server: greenwolf.fonixapp.org
+  servername: indeed.com
   tls: true
   type: vless
-  uuid: 2f79c61d-043b-421f-860e-4924246609e1
-- alterId: 2
-  cipher: auto
-  name: 🇳🇱 IT²_1|1.6MB/s|TK-NL|X|KeepHistory
+  uuid: f99cc0f1-d1a3-45f9-a13b-b33c8d3e0f10
+- name: 🇫🇷_FR_法国
+  password: dongtaiwang.com
+  port: 5355
+  server: 163.172.21.105
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸_US_美国_6
   network: tcp
-  port: 30805
-  server: v5.heduian.link
-  servername: v5.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸_US_美国_2
-  network: ws
-  password: trojan
-  port: 8443
-  server: ip.sb
-  sni: fofang.pages.dev
+  port: 38390
+  reality-opts:
+    public-key: a3usSjtSaH2XGzG5oi3oqPYKlhsJOmmJYI4nitX1rn8
+    short-id: 2b
+    spider-x: /
+  server: tuskar.fonixapp.org
+  servername: smallpdf.com
   tls: true
-  type: trojan
+  type: vless
+  uuid: f36312ed-c887-48a5-a803-22ca16a153c5
+- client-fingerprint: chrome
+  name: 🇧🇬_BG_保加利亚
+  network: ws
+  port: 24443
+  server: 178.239.123.216
+  servername: vless3.datatestvless.click
+  tls: true
+  type: vless
+  uuid: aa7f42cc-616f-4550-9a87-4b85bb409121
   ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇷_IR_伊朗
-  password: o5osZg269v5zHpYjr1xY9s
-  port: 8080
-  server: 151.242.251.137
-  type: ss
-- name: 🇮🇷_IR_伊朗_1
-  password: 05d0e442-5d3d-4fa7-a21f-b1bfa82e46cc
-  port: 21324
-  server: tr.xn--9kqx4sc0n.shop
+    headers:
+      Host: vless3.datatestvless.click
+    path: /?ed=2560
+- name: 🇨🇦_CA_加拿大
+  password: 338ce171-d764-4610-8fd5-6688b0d321f0
+  port: 30102
+  server: 140.238.137.165
+  skip-cert-verify: true
+  sni: du.wish.ml
   type: hysteria2
 - client-fingerprint: chrome
-  name: 🇺🇸_US_美国_3
-  network: ws
-  port: 443
-  server: ip.sb
-  servername: 1079ca08.turk-71y.pages.dev
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇺🇸_US_美国_7
+  network: tcp
+  port: 21763
+  reality-opts:
+    public-key: RZax6slpjvfUJ46gHwIfIBApUSapP7i7yPz1f1WwBXE
+    short-id: a193
+    spider-x: /
+  server: dwarvensniper.fonixapp.org
+  servername: stackoverflow.com
   tls: true
   type: vless
-  uuid: b15acbbd-a093-4269-a20d-d74dce4bff89
-  ws-opts:
-    headers:
-      Host: 1079ca08.turk-71y.pages.dev
-    path: /rqi2wmvf7pii4hrp/njiumy4xmi4xodu=?ed=2560
+  uuid: 90c6cd82-5fad-4d31-9909-8b53b2ea15f4
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_4
+  name: 🇺🇸_US_美国_8
   network: tcp
   port: 29000
   reality-opts:
@@ -166,215 +209,76 @@ proxies:
   uuid: 58a3efa1-94a6-4e03-b5b7-c4a398585979
 - alterId: 0
   cipher: auto
-  name: 【机场推荐：https://a0a.xyz/】7
-  network: ws
-  port: 443
-  server: 172.82.67.156.sslip.io
-  servername: 172.82.67.156.sslip.io
-  tls: true
+  name: 🇺🇸US²_4|2.0MB/s|47%|GPT⁺|GM|YT|TK|X
+  network: none
+  port: 28306
+  server: 172.245.59.239
   type: vmess
-  uuid: 55821780-6970-49df-8a23-800c2c9b7d3a
-  ws-opts:
-    headers:
-      Host: 172.82.67.156.sslip.io
-    path: /SGBvMNdpPtNtvgyaVXm
+  uuid: 60834747-f332-4118-fc16-7d0aff2cf110
 - client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_5
-  network: tcp
-  port: 31502
-  reality-opts:
-    public-key: oenAlMhG602prGwOqnAt5yZ55yuDEfZwGZXn-WaxizM
-    short-id: e1814a
-    spider-x: /
-  server: silverzebra.fonixapp.org
-  servername: marmiton.org
-  tls: true
-  type: vless
-  uuid: b20c12e7-f071-4829-94e7-17dc4e43a37a
-- name: 🇮🇷_IR_伊朗_2
-  password: 05d0e442-5d3d-4fa7-a21f-b1bfa82e46cc
-  port: 21967
-  server: tr.xn--9kqx4sc0n.shop
-  type: hysteria2
-- name: 🇨🇦_CA_加拿大
-  password: 338ce171-d764-4610-8fd5-6688b0d321f0
-  port: 30102
-  server: 140.238.137.165
-  skip-cert-verify: true
-  sni: du.wish.ml
-  type: hysteria2
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸_US_美国_6
+  name: 🇷🇺_RU_俄罗斯
   network: ws
-  port: 443
-  server: ger.americanexpressbanks.com
-  servername: ger.americanexpressbanks.com
+  port: 1443
+  server: 81.161.98.228
+  servername: cdn.filterai.ru
   tls: true
   type: vless
-  uuid: 6405f134-503f-40b3-aea9-cc92fa77b5ac
+  uuid: 00f02ab2-6f2d-449f-a089-d182a2fac59a
   ws-opts:
     headers:
-      Host: ger.americanexpressbanks.com
-    path: /xYzAbc123
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_7
-  network: tcp
-  port: 27994
-  reality-opts:
-    public-key: lPSI3kHNhurG5ak6LTNc6NAJmSOvdt8EWjLHdsJXLCE
-    short-id: f2951ff6a7
-  server: drow-ranger.fonixapp.org
-  servername: ilovepdf.com
-  tls: true
-  type: vless
-  uuid: 119b539d-e4ac-464d-a389-ace2e388b805
-- encryption: none
-  name: 🇩🇪_DE_德国_1
-  network: tcp
-  port: 443
-  server: vp9.myphotomoments.ir
-  type: vless
-  uuid: Warpi-Free-Vpn-In-GooglePlay
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_8
-  network: tcp
-  port: 12645
-  reality-opts:
-    public-key: U15vYKJBiI0x1Sltv3qZrtuRoGlw5fIu-jlHfN1hBB4
-    short-id: 3fd623
-  server: graygoat.fonixapp.org
-  servername: smallpdf.com
-  tls: true
-  type: vless
-  uuid: 8d5bca78-f49f-4e49-ad7b-bb58da44d40b
-- name: 🇸🇪_SE_瑞典
-  password: 05d0e442-5d3d-4fa7-a21f-b1bfa82e46cc
-  port: 21363
-  server: us.xn--9kqx4sc0n.shop
-  type: hysteria2
-- encryption: none
-  name: 🇸🇦_SA_沙特阿拉伯
-  network: ws
-  port: 2087
-  server: usa1.tunnelx.space
-  servername: ws.usa1.tunnelx.space
-  type: vless
-  uuid: 393040206-client-475
-  ws-opts:
-    headers:
-      Host: ws.usa1.tunnelx.space
-    path: /assets/img/banner_v3.webp/#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL
-- encryption: none
-  name: 🇮🇷_IR_伊朗_3
-  network: tcp
-  port: 443
-  server: vp8.myphotomoments.ir
-  type: vless
-  uuid: Warpi-Free-Vpn-In-GooglePlay
-- name: 🇩🇰_DK_丹麦
-  network: ws
-  password: 559b90ec-b620-4255-80a5-c64b8d3ffe6c
-  port: 8443
-  server: 195.85.59.95
-  sni: cdn-node-oss-64.paofu.de
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-64.paofu.de
-    path: /profile/sharenode
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸_US_美国_9
-  network: tcp
-  port: 26861
-  reality-opts:
-    public-key: IIdE2p3vqHDjHfLrvJXkrLoYpYMJH0R1tacCkHiDtAA
-    short-id: ecc1c4
-    spider-x: /
-  server: shadowshaman.fonixapp.org
-  servername: groww.in
-  tls: true
-  type: vless
-  uuid: 04db6938-72dc-42b4-a096-cc6a5e8316d2
-- encryption: none
-  name: 🇩🇪_DE_德国_2
-  network: tcp
-  port: 443
-  server: vp5.myphotomoments.ir
-  type: vless
-  uuid: Warpi-Free-Vpn-In-GooglePlay
+      Host: cdn.filterai.ru
+    path: /websocketpl
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US²_2|2.5MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucced
+  network: none
+  port: 29431
+  server: 185.221.23.251
+  type: vmess
+  uuid: 8b78363e-3c3a-44ab-f0d8-f13d950c8572
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇺🇸 US_156
-  - 🇰🇷KR-125.134.123.178-1122
-  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国
-  - 🇳🇱 IT²_1|1.6MB/s|TK-NL|X|KeepHistory
+  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国_2
-  - 🇮🇷_IR_伊朗
-  - 🇮🇷_IR_伊朗_1
+  - 🇰🇷KR-125.134.123.178-1031
   - 🇺🇸_US_美国_3
   - 🇺🇸_US_美国_4
-  - 【机场推荐：https://a0a.xyz/】7
   - 🇺🇸_US_美国_5
-  - 🇮🇷_IR_伊朗_2
-  - 🇨🇦_CA_加拿大
+  - 🇫🇷_FR_法国
   - 🇺🇸_US_美国_6
+  - 🇧🇬_BG_保加利亚
+  - 🇨🇦_CA_加拿大
   - 🇺🇸_US_美国_7
-  - 🇩🇪_DE_德国_1
   - 🇺🇸_US_美国_8
-  - 🇸🇪_SE_瑞典
-  - 🇸🇦_SA_沙特阿拉伯
-  - 🇮🇷_IR_伊朗_3
-  - 🇩🇰_DK_丹麦
-  - 🇺🇸_US_美国_9
-  - 🇩🇪_DE_德国_2
+  - 🇺🇸US²_4|2.0MB/s|47%|GPT⁺|GM|YT|TK|X
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸US²_2|2.5MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucced
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸 US_156
-  - 🇰🇷KR-125.134.123.178-1122
-  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国
-  - 🇳🇱 IT²_1|1.6MB/s|TK-NL|X|KeepHistory
+  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国_2
-  - 🇮🇷_IR_伊朗
-  - 🇮🇷_IR_伊朗_1
+  - 🇰🇷KR-125.134.123.178-1031
   - 🇺🇸_US_美国_3
   - 🇺🇸_US_美国_4
-  - 【机场推荐：https://a0a.xyz/】7
   - 🇺🇸_US_美国_5
-  - 🇮🇷_IR_伊朗_2
-  - 🇨🇦_CA_加拿大
+  - 🇫🇷_FR_法国
   - 🇺🇸_US_美国_6
+  - 🇧🇬_BG_保加利亚
+  - 🇨🇦_CA_加拿大
   - 🇺🇸_US_美国_7
-  - 🇩🇪_DE_德国_1
   - 🇺🇸_US_美国_8
-  - 🇸🇪_SE_瑞典
-  - 🇸🇦_SA_沙特阿拉伯
-  - 🇮🇷_IR_伊朗_3
-  - 🇩🇰_DK_丹麦
-  - 🇺🇸_US_美国_9
-  - 🇩🇪_DE_德国_2
+  - 🇺🇸US²_4|2.0MB/s|47%|GPT⁺|GM|YT|TK|X
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸US²_2|2.5MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucced
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎯 全球直连
@@ -393,32 +297,23 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇺🇸 US_156
-  - 🇰🇷KR-125.134.123.178-1122
-  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国
   - 🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国
-  - 🇳🇱 IT²_1|1.6MB/s|TK-NL|X|KeepHistory
+  - 🇨🇳_CN_中国
   - 🇺🇸_US_美国_2
-  - 🇮🇷_IR_伊朗
-  - 🇮🇷_IR_伊朗_1
+  - 🇰🇷KR-125.134.123.178-1031
   - 🇺🇸_US_美国_3
   - 🇺🇸_US_美国_4
-  - 【机场推荐：https://a0a.xyz/】7
   - 🇺🇸_US_美国_5
-  - 🇮🇷_IR_伊朗_2
-  - 🇨🇦_CA_加拿大
+  - 🇫🇷_FR_法国
   - 🇺🇸_US_美国_6
+  - 🇧🇬_BG_保加利亚
+  - 🇨🇦_CA_加拿大
   - 🇺🇸_US_美国_7
-  - 🇩🇪_DE_德国_1
   - 🇺🇸_US_美国_8
-  - 🇸🇪_SE_瑞典
-  - 🇸🇦_SA_沙特阿拉伯
-  - 🇮🇷_IR_伊朗_3
-  - 🇩🇰_DK_丹麦
-  - 🇺🇸_US_美国_9
-  - 🇩🇪_DE_德国_2
+  - 🇺🇸US²_4|2.0MB/s|47%|GPT⁺|GM|YT|TK|X
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸US²_2|2.5MB/s|GPT⁺|GM|YT|TK|NF|X|KeepSucced
   type: select
 rule-providers:
   BanAD:
