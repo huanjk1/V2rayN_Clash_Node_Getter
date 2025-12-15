@@ -44,12 +44,45 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '11'
-- cipher: chacha20-ietf
-  name: 🇨🇳_CN_中国
-  password: asd123456
-  port: 8388
-  server: 103.149.182.158
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  servername: hkt.gotochinatown.net
+  type: vmess
+  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
+  network: ws
+  port: 80
+  server: eb894086-t70f40-t7luxf-tng5.hkt.gotochinatown.net
+  servername: eb894086-t70f40-t7luxf-tng5.hkt.gotochinatown.net
+  type: vmess
+  uuid: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: eb894086-t70f40-t7luxf-tng5.hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US_189
+  network: ws
+  port: 52512
+  server: aflzzul.meiquankongjian.com
+  servername: aflzzul.meiquankongjian.com
+  type: vmess
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  ws-opts:
+    headers:
+      Host: aflzzul.meiquankongjian.com
+    path: /564dfa20/
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -74,70 +107,43 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '11'
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: -@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN
-  name: 🇮🇷_IR_伊朗
-  network: grpc
-  port: 3060
-  reality-opts:
-    public-key: LnDnwg2lFWruzisAY8t6ouWZ3JoQ_47XAl-jUx8tJx0
-    short-id: acd96c5fc628f1
-  server: 91.98.92.70
-  servername: miro.com
-  tls: true
-  type: vless
-  uuid: Telegram--SRCVPN--
-- encryption: none
-  grpc-opts:
-    grpc-service-name: '@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet'
-  name: 🇺🇸_US_美国_1
-  network: grpc
-  port: 4488
-  server: V2ngnet.heloisfood.ir
-  type: vless
-  uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
-- alpn:
-  - h2
-  encryption: none
-  grpc-opts:
-    grpc-service-name: Join-bede-Raiv2mmr
-  name: 🇺🇸_US_美国_2
-  network: grpc
-  port: 443
-  server: my-fr-raiv2mmr-telegram-join.koyeb.app
-  tls: true
-  type: vless
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-- encryption: none
-  grpc-opts:
-    grpc-service-name: '@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1'
-  name: 🇺🇸_US_美国_3
-  network: grpc
-  port: 6423
-  server: masterserver1.heloisfood.ir
-  type: vless
-  uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
-- encryption: none
-  grpc-opts:
-    grpc-service-name: '@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast'
-  name: 🇺🇸_US_美国_4
-  network: grpc
-  port: 2718
-  server: V2ngfast.heloisfood.ir
-  type: vless
-  uuid: 0d25085e-b6c4-410a-b206-4dde607cff6c
-- fingerprint: chrome
-  name: 🇺🇸_US_美国_5
+- alterId: 2
+  cipher: auto
+  name: 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 3
   network: ws
-  password: POORIARED
-  port: 443
-  server: 172.67.134.185
-  sni: reDfRee8.REDFree8.ir
-  type: trojan
+  port: 80
+  server: ebf93ea5-t70f40-t7d1t3-81nv.hkt.gotochinatown.net
+  servername: ebf93ea5-t70f40-t7d1t3-81nv.hkt.gotochinatown.net
+  type: vmess
+  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
   ws-opts:
-    path: /eyJqdW5rIjoiVUl6eXhLZkkwUTJ3ZzkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: ebf93ea5-t70f40-t7d1t3-81nv.hkt.gotochinatown.net
+    path: /
+- name: 🇫🇷_FR_法国_2
+  network: tcp
+  password: 90y2l3mu48d10uy3ibad
+  port: 58290
+  server: 195.154.202.25
+  skip-cert-verify: true
+  sni: ads.x5.ru
+  tls: true
+  type: trojan
+- alpn:
+  - http/1.1
+  encryption: none
+  name: 🇺🇸_US_美国_1
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR.
+  tls: true
+  type: vless
+  uuid: 73856b73-19d2-47e6-b991-5eaa421161ea
+  ws-opts:
+    headers:
+      Host: DigiOCmaMooSHawSFOrVisitINGmAMaVlwS.MMogAmES.iR.
+    path: /admin?ed=1024
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -160,57 +166,11 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-  server: 51.250.109.47
+  server: 51.250.25.11
   servername: ads.x5.ru
   tls: true
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- cipher: chacha20-ietf
-  name: 🇨🇳_CN_中国_1
-  password: asd123456
-  port: 8388
-  server: 103.149.182.105
-  type: ss
-- alpn:
-  - http/1.1
-  name: 🇺🇸_US_美国_6
-  network: ws
-  password: bb824a22-b7ce-427b-9ed6-1adf0751da02
-  port: 443
-  server: 107.174.82.102.sslip.io
-  skip-cert-verify: true
-  sni: 107.174.82.102.sslip.io
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 107.174.82.102.sslip.io
-    path: /gXKGj8a1tp1nNbZEcRugowKV
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺_RU_俄罗斯
-  network: tcp
-  port: 1488
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 84.201.178.99
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇮🇳_IN_印度
-  network: tcp
-  port: 443
-  server: deu637.webunlocked.org
-  servername: deu637.webunlocked.org
-  tls: true
-  type: vless
-  uuid: 51be809d-3e82-4090-b14f-a42a32100ff9
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -220,70 +180,89 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-  server: 51.250.25.11
+  server: 51.250.109.47
   servername: ads.x5.ru
   tls: true
   type: vless
   uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 GB_52
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: 🇷🇺_RU_俄罗斯_1
+  name: 🇬🇧_GB_英国_3
   network: tcp
-  port: 443
+  port: 1488
   reality-opts:
-    public-key: lJscl0GgEiVZtTVrMVI6O0-zSJTgmug9Cs-KJqpxWw0
-    short-id: f6fb0261a102c0c8
-  server: 89.23.101.203
-  servername: www.vk.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+    spider-x: /telegram cafe_vpn2/telegram cafe_vpn2/telegram cafe_vpn2/telegram cafe_vpn2/telegram
+      cafe_vpn2/telegram cafe_vpn2/telegram cafe_vpn2/telegram cafe_vpn2/telegram
+      cafe_vpn2/telegram cafe_vpn2
+  server: 51.250.16.178
+  servername: ads.x5.ru
   tls: true
   type: vless
-  uuid: d5f7970e-121f-4e6f-9acf-250effc0715b
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+- cipher: aes-256-cfb
+  name: 🇮🇪_IE_爱尔兰
+  password: amazonskr05
+  port: 443
+  server: 3.253.99.197
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇷_IR_伊朗
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.153
+  type: ss
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - ♻️ 自动选择
   - DIRECT
   - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
+  - 🇺🇸 US_189
   - 🇫🇷_FR_法国
   - 🇫🇷_FR_法国_1
-  - 🇮🇷_IR_伊朗
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 3
+  - 🇫🇷_FR_法国_2
   - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
-  - 🇺🇸_US_美国_3
-  - 🇺🇸_US_美国_4
-  - 🇺🇸_US_美国_5
   - 🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
-  - 🇨🇳_CN_中国_1
-  - 🇺🇸_US_美国_6
-  - 🇷🇺_RU_俄罗斯
-  - 🇮🇳_IN_印度
   - 🇬🇧_GB_英国_2
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧 GB_52
+  - 🇬🇧_GB_英国_3
+  - 🇮🇪_IE_爱尔兰
+  - 🇮🇷_IR_伊朗
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
+  - 🇺🇸 US_189
   - 🇫🇷_FR_法国
   - 🇫🇷_FR_法国_1
-  - 🇮🇷_IR_伊朗
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 3
+  - 🇫🇷_FR_法国_2
   - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
-  - 🇺🇸_US_美国_3
-  - 🇺🇸_US_美国_4
-  - 🇺🇸_US_美国_5
   - 🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
-  - 🇨🇳_CN_中国_1
-  - 🇺🇸_US_美国_6
-  - 🇷🇺_RU_俄罗斯
-  - 🇮🇳_IN_印度
   - 🇬🇧_GB_英国_2
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧 GB_52
+  - 🇬🇧_GB_英国_3
+  - 🇮🇪_IE_爱尔兰
+  - 🇮🇷_IR_伊朗
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎯 全球直连
@@ -303,23 +282,21 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
+  - 🇺🇸 US_189
   - 🇫🇷_FR_法国
   - 🇫🇷_FR_法国_1
-  - 🇮🇷_IR_伊朗
+  - 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 3
+  - 🇫🇷_FR_法国_2
   - 🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
-  - 🇺🇸_US_美国_3
-  - 🇺🇸_US_美国_4
-  - 🇺🇸_US_美国_5
   - 🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
-  - 🇨🇳_CN_中国_1
-  - 🇺🇸_US_美国_6
-  - 🇷🇺_RU_俄罗斯
-  - 🇮🇳_IN_印度
   - 🇬🇧_GB_英国_2
-  - 🇷🇺_RU_俄罗斯_1
+  - 🇬🇧 GB_52
+  - 🇬🇧_GB_英国_3
+  - 🇮🇪_IE_爱尔兰
+  - 🇮🇷_IR_伊朗
   type: select
 rule-providers:
   BanAD:
