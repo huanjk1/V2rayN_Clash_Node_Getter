@@ -33,17 +33,12 @@ proxies:
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港2|@stairnode
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  port: 30809
+  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇭🇰 香港3|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 443
@@ -67,79 +62,73 @@ proxies:
   type: trojan
 - name: 🇯🇵 日本|@stairnode
   password: BxceQaOe
-  port: 3760
-  server: 57.180.10.245
+  port: 2595
+  server: 13.114.175.199
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 🇯🇵 日本2|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 4006
-  server: 13.231.188.173
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇯🇵 日本3|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1933
-  server: 13.231.188.173
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - cipher: aes-256-cfb
   name: 🇰🇷 韩国|@stairnode
   password: qwerREWQ@@
-  port: 22376
-  server: 125.141.31.75
+  port: 21215
+  server: 221.150.109.92
   type: ss
 - name: 🇸🇬 新加坡|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
-  server: 13.231.188.173
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇸🇬 新加坡2|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 3901
-  server: 54.199.47.127
+  server: 160.16.63.16
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇸🇬 新加坡3|@stairnode
   password: BxceQaOe
   port: 804
-  server: 18.163.28.248
+  server: 95.40.73.131
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 🇺🇸 美国|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
-  server: 13.231.188.173
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇺🇸 美国2|@stairnode
   password: 381f2e86233720eacda26d50e9aa26da
   port: 1281
-  server: 153.121.44.99
+  server: 160.16.63.16
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 🇺🇸 美国3|@stairnode
   password: BxceQaOe
-  port: 1221
-  server: 13.231.188.173
+  port: 2173
+  server: 16.163.98.169
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇻🇳 越南|@stairnode
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.248
-  type: ss
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
@@ -161,7 +150,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - interval: 300
   name: ♻️ 自动选择
@@ -182,7 +170,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -207,7 +194,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - name: 📲 电报信息
   proxies:
@@ -229,7 +215,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -251,7 +236,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -273,7 +257,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - name: 📢 谷歌FCM
   proxies:
@@ -296,7 +279,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -335,7 +317,6 @@ proxy-groups:
   - 🇺🇸 美国|@stairnode
   - 🇺🇸 美国2|@stairnode
   - 🇺🇸 美国3|@stairnode
-  - 🇻🇳 越南|@stairnode
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
