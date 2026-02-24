@@ -4,6 +4,37 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
+- name: 美國
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 8443
+  server: 172.66.44.230
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: Koma-YT.PAGeS.Dev
+    path: /tro8sFW1S91B6sZrM1?ed=2560
+- name: 🇩🇪DE_14|⬇️3.2MB/s_1
+  network: tcp
+  password: pYIoKUPGpWeTYXEx3HjR7s97B
+  port: 443
+  server: free-de-2.undef.network
+  skip-cert-verify: true
+  sni: free-de-2.undef.network
+  type: trojan
+  udp: true
+- name: 🇩🇪DE_14|⬇️3.2MB/s_2
+  network: tcp
+  password: pYIoKUPGpWeTYXEx3HjR7s97B
+  port: 443
+  server: free-de-2.undef.network
+  skip-cert-verify: true
+  sni: free-de-2.undef.network
+  type: trojan
+  udp: true
 - flow: xtls-rprx-vision
   name: 🇦🇲AM_1|⬇️1.3MB/s
   network: tcp
@@ -27,17 +58,6 @@ proxies:
   udp: true
   uuid: f0b15f64-db59-438c-b1b6-f1b83db52240
 - flow: xtls-rprx-vision
-  name: 🇺🇸US_2|⬇️3.6MB/s
-  network: tcp
-  port: 443
-  server: 77.110.125.83
-  servername: web.max.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ea8eaf21-76f8-4ef2-8397-aa1d693487a3
-- flow: xtls-rprx-vision
   name: 🇩🇪DE_5|⬇️3.1MB/s
   network: tcp
   port: 443
@@ -48,28 +68,6 @@ proxies:
   type: vless
   udp: true
   uuid: jina
-- flow: xtls-rprx-vision
-  name: 🇩🇪DE_7|⬇️5.1MB/s
-  network: tcp
-  port: 443
-  server: 93.94.51.210
-  servername: deu549.worldbypass.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
-- flow: xtls-rprx-vision
-  name: 🇺🇸US_2|⬇️5.8MB/s_1
-  network: tcp
-  port: 443
-  server: 176.108.245.2
-  servername: get.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 18722b2a-1b55-44a3-a538-66a8cb97093d
 - flow: xtls-rprx-vision
   name: 🇺🇸US_1|⬇️2.1MB/s_1
   network: tcp
@@ -94,16 +92,6 @@ proxies:
 - name: 🇵🇱PL_1|⬇️4.6MB/s_1
   network: tcp
   port: 443
-  server: 144.31.4.67
-  servername: plcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_1|⬇️4.6MB/s_2
-  network: tcp
-  port: 443
   server: 144.31.2.20
   servername: plcdn18.suio.me
   skip-cert-verify: true
@@ -121,20 +109,6 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇳🇱NL_2|⬇️4.1MB/s_1
-  network: ws
-  port: 2052
-  server: 104.18.32.47
-  servername: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
-  ws-opts:
-    headers:
-      host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
-    path: /
 - name: 🇳🇱NL_1|⬇️3.9MB/s_1
   network: ws
   port: 80
@@ -149,16 +123,6 @@ proxies:
     headers:
       host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
     path: /?ed
-- name: 🇱🇻LV_1|⬇️1.0MB/s
-  network: tcp
-  port: 443
-  server: lvcdn4.suio.me
-  servername: lvcdn4.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
 - flow: xtls-rprx-vision
   name: 🇫🇷FR_2|⬇️1.0MB/s_1
   network: tcp
@@ -181,26 +145,6 @@ proxies:
   type: vless
   udp: true
   uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- name: 🇫🇮FI_11|⬇️5.0MB/s_1
-  network: tcp
-  port: 443
-  server: 144.31.128.69
-  servername: nlcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇫🇮FI_1|⬇️4.5MB/s_1
-  network: tcp
-  port: 443
-  server: 144.31.128.67
-  servername: nlcdn12.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
 - flow: xtls-rprx-vision
   name: 🇩🇪DE_6|⬇️3.6MB/s_1
   network: tcp
@@ -223,17 +167,6 @@ proxies:
   type: vless
   udp: true
   uuid: 405ba2d6-7fcb-4cdd-9c77-4ecc616d77c8
-- flow: xtls-rprx-vision
-  name: 🇦🇹AT_1|⬇️2.1MB/s_1
-  network: tcp
-  port: 443
-  server: 152.53.46.3
-  servername: au1.scroogethebest.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
 - flow: xtls-rprx-vision
   name: 🇦🇹AT_1|⬇️1.8MB/s
   network: tcp
@@ -259,16 +192,6 @@ proxies:
     headers:
       host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
     path: /?ed
-- name: 未知VLESS-84|free-nodes
-  network: tcp
-  port: 443
-  server: 144.31.128.67
-  servername: nlcdn12.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
 - flow: xtls-rprx-vision
   name: DEVLESS-124|free-nodes
   network: tcp
@@ -302,55 +225,11 @@ proxies:
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
 - flow: xtls-rprx-vision
-  name: 未知VLESS-97|free-nodes
-  network: tcp
-  port: 8443
-  server: 62.182.196.134
-  servername: retn.net
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
-- flow: xtls-rprx-vision
   name: FRVLESS-111|free-nodes
   network: tcp
   port: 443
   server: fran.scroogethebest.com
   servername: fran.scroogethebest.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- flow: xtls-rprx-vision
-  name: 未知VLESS-110|free-nodes
-  network: tcp
-  port: 443
-  server: 152.53.46.3
-  servername: au1.scroogethebest.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- flow: xtls-rprx-vision
-  name: 🇦🇹AT_1|⬇️2.1MB/s_2
-  network: tcp
-  port: 443
-  server: 152.53.46.3
-  servername: au1.scroogethebest.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- flow: xtls-rprx-vision
-  name: 🇦🇹AT_1|⬇️2.2MB/s
-  network: tcp
-  port: 443
-  server: 152.53.46.3
-  servername: au1.scroogethebest.com
   skip-cert-verify: true
   tls: false
   type: vless
@@ -367,17 +246,6 @@ proxies:
   type: vless
   udp: true
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- flow: xtls-rprx-vision
-  name: 🇧🇬BG_1|⬇️2.9MB/s
-  network: tcp
-  port: 443
-  server: 2.59.218.62
-  servername: bg.strelkavpn.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: b469974b-4319-452a-94de-46b314ac1a8e
 - flow: xtls-rprx-vision
   name: 🇩🇪DE_2|⬇️1.3MB/s_2
   network: tcp
@@ -411,46 +279,6 @@ proxies:
   type: vless
   udp: true
   uuid: jina
-- name: 🇫🇮FI_1|⬇️4.5MB/s_2
-  network: tcp
-  port: 443
-  server: 144.31.128.67
-  servername: nlcdn12.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇫🇮FI_11|⬇️5.0MB/s_2
-  network: tcp
-  port: 443
-  server: 144.31.128.69
-  servername: nlcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇫🇮FI_3|⬇️2.4MB/s
-  network: tcp
-  port: 443
-  server: 144.31.128.69
-  servername: nlcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇫🇮FI_9|⬇️4.9MB/s
-  network: tcp
-  port: 443
-  server: 144.31.128.67
-  servername: nlcdn12.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
 - flow: xtls-rprx-vision
   name: 🇫🇷FR_1|⬇️1.3MB/s_2
   network: tcp
@@ -606,7 +434,7 @@ proxies:
     headers:
       host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
     path: /?ed
-- name: 🇳🇱NL_2|⬇️4.1MB/s_2
+- name: 🇳🇱NL_2|⬇️4.1MB/s_1
   network: ws
   port: 2052
   server: 104.18.32.47
@@ -644,7 +472,7 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_1|⬇️4.6MB/s_3
+- name: 🇵🇱PL_1|⬇️4.6MB/s_2
   network: tcp
   port: 443
   server: 144.31.4.67
@@ -654,17 +482,7 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_1|⬇️4.6MB/s_4
-  network: tcp
-  port: 443
-  server: 144.31.2.20
-  servername: plcdn18.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_10|⬇️4.8MB/s
+- name: 🇵🇱PL_1|⬇️4.6MB/s_3
   network: tcp
   port: 443
   server: 144.31.2.20
@@ -694,31 +512,11 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_2|⬇️3.2MB/s_1
-  network: tcp
-  port: 443
-  server: 144.31.4.67
-  servername: plcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
 - name: 🇵🇱PL_3|⬇️2.2MB/s
   network: tcp
   port: 443
   server: 144.31.4.36
   servername: plcdn13.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_3|⬇️4.0MB/s_1
-  network: tcp
-  port: 443
-  server: 144.31.2.20
-  servername: plcdn18.suio.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -784,16 +582,6 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_8|⬇️2.5MB/s
-  network: tcp
-  port: 443
-  server: 144.31.2.20
-  servername: plcdn18.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
 - name: 🇵🇱PL_9|⬇️3.8MB/s
   network: tcp
   port: 443
@@ -804,39 +592,6 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- flow: xtls-rprx-vision
-  name: 🇹🇷TR_2|⬇️1.2MB/s
-  network: tcp
-  port: 443
-  server: 213.176.19.224
-  servername: tr7.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ad5e032f-d29d-4f94-936a-a7c6dc1c42d5
-- flow: xtls-rprx-vision
-  name: 🇹🇷TR_2|⬇️5.5MB/s
-  network: tcp
-  port: 443
-  server: 213.176.19.224
-  servername: tr7.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: ad5e032f-d29d-4f94-936a-a7c6dc1c42d5
-- flow: xtls-rprx-vision
-  name: 🇺🇸美国01
-  network: tcp
-  port: 20664
-  server: sss.ikun6.dpdns.org
-  servername: addons.mozilla.org
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: f8159636-4476-4e46-f303-a9c5abc6e7ff
 - flow: xtls-rprx-vision
   name: 🇺🇸US_1|⬇️2.1MB/s_2
   network: tcp
@@ -860,28 +615,6 @@ proxies:
   udp: true
   uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
 - flow: xtls-rprx-vision
-  name: 🇺🇸US_2|⬇️5.8MB/s_2
-  network: tcp
-  port: 443
-  server: 176.108.245.2
-  servername: get.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 18722b2a-1b55-44a3-a538-66a8cb97093d
-- flow: xtls-rprx-vision
-  name: 🇺🇸US_3|⬇️4.2MB/s
-  network: tcp
-  port: 443
-  server: 176.108.245.2
-  servername: get.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 18722b2a-1b55-44a3-a538-66a8cb97093d
-- flow: xtls-rprx-vision
   name: 🇺🇸US_6|⬇️3.6MB/s
   network: tcp
   port: 443
@@ -892,47 +625,8 @@ proxies:
   type: vless
   udp: true
   uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
-- name: 🇺🇸US_8|⬇️2.3MB/s
-  network: ws
-  port: 443
-  server: bbbnhj.288288.shop
-  servername: bBBNhj.288288.sHop
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc
-  ws-opts:
-    headers:
-      host: bBBNhj.288288.sHop
-    path: /s2VHv9VUVzg35A6ueyyZnWd
-- name: 🇺🇸US_4|⬇️2.6MB/s
-  network: ws
-  port: 443
-  server: rt.dddc.us.ci
-  servername: rt.dddc.us.ci
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 34778794-72e8-4862-b1e7-6e6c3ba894be
-  ws-opts:
-    headers:
-      host: rt.dddc.us.ci
-    path: /eDVWlsljXYWmzP5D1vsO
 - flow: xtls-rprx-vision
-  name: 🇺🇸US_2|⬇️5.8MB/s_3
-  network: tcp
-  port: 443
-  server: 176.108.245.2
-  servername: get.strelkavpn.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 18722b2a-1b55-44a3-a538-66a8cb97093d
-- flow: xtls-rprx-vision
-  name: 🇺🇸US_1|⬇️3.2MB/s
+  name: 🇺🇸US_1|⬇️3.2MB/s_1
   network: tcp
   port: 443
   server: 142.248.80.157
@@ -952,7 +646,7 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_3|⬇️4.0MB/s_2
+- name: 🇵🇱PL_3|⬇️4.0MB/s_1
   network: tcp
   port: 443
   server: 144.31.2.20
@@ -962,17 +656,7 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_2|⬇️3.2MB/s_2
-  network: tcp
-  port: 443
-  server: 144.31.4.67
-  servername: plcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇵🇱PL_1|⬇️1.0MB/s
+- name: 🇵🇱PL_1|⬇️1.0MB/s_1
   network: tcp
   port: 443
   server: 144.31.4.36
@@ -982,7 +666,7 @@ proxies:
   type: vless
   udp: true
   uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
-- name: 🇳🇱NL_2|⬇️4.1MB/s_3
+- name: 🇳🇱NL_2|⬇️4.1MB/s_2
   network: ws
   port: 2052
   server: 104.18.32.47
@@ -1011,7 +695,7 @@ proxies:
       host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
     path: /?ed
 - flow: xtls-rprx-vision
-  name: 🇫🇷FR_3|⬇️1.8MB/s
+  name: 🇫🇷FR_3|⬇️1.8MB/s_1
   network: tcp
   port: 443
   server: fran.scroogethebest.com
@@ -1032,27 +716,7 @@ proxies:
   type: vless
   udp: true
   uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-- name: 🇫🇮FI_2|⬇️2.8MB/s
-  network: tcp
-  port: 443
-  server: 144.31.128.67
-  servername: nlcdn12.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇫🇮FI_1|⬇️3.1MB/s
-  network: tcp
-  port: 443
-  server: 144.31.128.69
-  servername: nlcdn14.suio.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇩🇪DE_8|⬇️3.5MB/s
+- name: 🇩🇪DE_8|⬇️3.5MB/s_1
   network: tcp
   port: 443
   server: decdn16.suio.me
@@ -1062,102 +726,219 @@ proxies:
   type: vless
   udp: true
   uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
-- name: 🇩🇪DE_7|⬇️5.6MB/s
-  network: ws
-  port: 2053
-  server: www.speedtest.net
-  servername: dl.immerchauffage.ir.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: Golestan-vpn3
-  ws-opts:
-    headers:
-      host: dl.immerchauffage.ir.
-    path: /?ed=2048
-- name: 🇩🇪DE_5|⬇️5.4MB/s
-  network: ws
-  port: 443
-  server: c8f7b1ab85189cf5.first.sapienza-mahan.ir
-  servername: harro-likeh1.sdcards1.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4baefee-fc4c-42ed-b19c-5d5f7dad36ba
-  ws-opts:
-    headers:
-      host: harro-likeh1.sdcards1.ir
-    path: /
-- name: 美國
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 172.66.44.230
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: Koma-YT.PAGeS.Dev
-    path: /tro8sFW1S91B6sZrM1?ed=2560
-- name: 🇩🇪DE_14|⬇️3.2MB/s
+- name: 🇩🇪DE_3|⬇️5.5MB/s
   network: tcp
-  password: pYIoKUPGpWeTYXEx3HjR7s97B
   port: 443
-  server: free-de-2.undef.network
+  server: 152.53.116.71
+  servername: yahoo.com
   skip-cert-verify: true
-  sni: free-de-2.undef.network
-  type: trojan
+  tls: false
+  type: vless
   udp: true
+  uuid: 0d328214-7ebc-413a-9820-2260b38d2242
+- name: 🇩🇪DE_4|⬇️4.2MB/s
+  network: tcp
+  port: 25451
+  server: 93.94.51.13
+  servername: yandex.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: a90f4742-2f30-47b5-9f17-b6ab04cc98e8
+- name: 🇩🇪DE_8|⬇️3.3MB/s
+  network: tcp
+  port: 443
+  server: 152.53.116.71
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1e878456-0f00-4a85-99a6-1d69bdc62e3d
+- name: 🇩🇪DE_8|⬇️3.5MB/s_2
+  network: tcp
+  port: 443
+  server: decdn16.suio.me
+  servername: decdn16.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8664a37d-40c9-47f0-8619-d9199651be2c
+- name: 🇫🇷FR_1|⬇️2.8MB/s
+  network: tcp
+  port: 52042
+  server: 185.156.72.124
+  servername: yandex.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
+- flow: xtls-rprx-vision
+  name: 🇫🇷FR_2|⬇️1.0MB/s_4
+  network: tcp
+  port: 443
+  server: 185.171.202.55
+  servername: fran.scroogethebest.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+- flow: xtls-rprx-vision
+  name: 🇫🇷FR_3|⬇️1.8MB/s_2
+  network: tcp
+  port: 443
+  server: fran.scroogethebest.com
+  servername: fran.scroogethebest.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+- flow: xtls-rprx-vision
+  name: 🇫🇷FR_3|⬇️2.2MB/s
+  network: tcp
+  port: 443
+  server: 193.160.130.112
+  servername: yimg.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 70b49349-9c87-497e-818c-46006e1c3ce0
+- flow: xtls-rprx-vision
+  name: 🇳🇱NL_1|⬇️1.1MB/s
+  network: tcp
+  port: 8443
+  server: 194.87.31.160
+  servername: st.okcdn.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 03dd7e7c-8d2a-4cd2-b920-f5ed564fc8c4
+- name: 🇳🇱NL_1|⬇️3.9MB/s_4
+  network: ws
+  port: 80
+  server: 104.18.32.47
+  servername: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+  ws-opts:
+    headers:
+      host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+    path: /?ed
+- name: 🇳🇱NL_2|⬇️4.1MB/s_3
+  network: ws
+  port: 2052
+  server: 104.18.32.47
+  servername: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+  ws-opts:
+    headers:
+      host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+    path: /
+- name: 🇵🇱PL_1|⬇️1.0MB/s_2
+  network: tcp
+  port: 443
+  server: 144.31.4.36
+  servername: plcdn13.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+- name: 🇵🇱PL_2|⬇️3.2MB/s
+  network: tcp
+  port: 443
+  server: 144.31.4.67
+  servername: plcdn14.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+- name: 🇵🇱PL_3|⬇️4.0MB/s_2
+  network: tcp
+  port: 443
+  server: 144.31.2.20
+  servername: plcdn18.suio.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+- name: 🇹🇷TR_1|⬇️1.6MB/s
+  network: tcp
+  port: 443
+  server: 103.231.75.185
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: f078abea-a480-44c7-a785-4436c767835a
+- name: 🇹🇷TR_3|⬇️3.5MB/s
+  network: tcp
+  port: 443
+  server: 103.231.75.185
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c4e055e5-c9dd-44ae-8daf-2f0f344dcbdb
+- flow: xtls-rprx-vision
+  name: 🇺🇸US_1|⬇️3.2MB/s_2
+  network: tcp
+  port: 443
+  server: 142.248.80.157
+  servername: apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4aff5de5-83dc-43c9-a33e-10e6fdb90ed2
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - ♻️ 自动选择
   - DIRECT
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1171,97 +952,79 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1275,52 +1038,50 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1329,47 +1090,31 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1383,98 +1128,80 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1488,98 +1215,80 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1593,98 +1302,80 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1698,52 +1389,50 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1766,47 +1455,31 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 美國
+  - 🇩🇪DE_14|⬇️3.2MB/s_1
+  - 🇩🇪DE_14|⬇️3.2MB/s_2
   - 🇦🇲AM_1|⬇️1.3MB/s
   - 🇩🇪DE_6|⬇️3.1MB/s
-  - 🇺🇸US_2|⬇️3.6MB/s
   - 🇩🇪DE_5|⬇️3.1MB/s
-  - 🇩🇪DE_7|⬇️5.1MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_1
   - 🇺🇸US_1|⬇️2.1MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_1
   - 🇵🇱PL_1|⬇️4.6MB/s_1
-  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️2.2MB/s_1
-  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_1|⬇️3.9MB/s_1
-  - 🇱🇻LV_1|⬇️1.0MB/s
   - 🇫🇷FR_2|⬇️1.0MB/s_1
   - 🇫🇷FR_1|⬇️1.3MB/s_1
-  - 🇫🇮FI_11|⬇️5.0MB/s_1
-  - 🇫🇮FI_1|⬇️4.5MB/s_1
   - 🇩🇪DE_6|⬇️3.6MB/s_1
   - 🇩🇪DE_2|⬇️1.3MB/s_1
-  - 🇦🇹AT_1|⬇️2.1MB/s_1
   - 🇦🇹AT_1|⬇️1.8MB/s
   - 🇺🇸_US_美国_3
-  - 未知VLESS-84|free-nodes
   - DEVLESS-124|free-nodes
   - 未知VLESS-81|free-nodes
   - 未知VLESS-93|free-nodes
-  - 未知VLESS-97|free-nodes
   - FRVLESS-111|free-nodes
-  - 未知VLESS-110|free-nodes
-  - 🇦🇹AT_1|⬇️2.1MB/s_2
-  - 🇦🇹AT_1|⬇️2.2MB/s
   - 🇦🇹AT_2|⬇️1.7MB/s
-  - 🇧🇬BG_1|⬇️2.9MB/s
   - 🇩🇪DE_2|⬇️1.3MB/s_2
   - 🇩🇪DE_2|⬇️6.1MB/s
   - 🇩🇪DE_6|⬇️3.6MB/s_2
-  - 🇫🇮FI_1|⬇️4.5MB/s_2
-  - 🇫🇮FI_11|⬇️5.0MB/s_2
-  - 🇫🇮FI_3|⬇️2.4MB/s
-  - 🇫🇮FI_9|⬇️4.9MB/s
   - 🇫🇷FR_1|⬇️1.3MB/s_2
   - 🇫🇷FR_1|⬇️2.6MB/s
   - 🇫🇷FR_1|⬇️3.1MB/s
@@ -1820,52 +1493,50 @@ proxy-groups:
   - 🇳🇱荷兰03
   - 🇳🇱荷兰04
   - 🇳🇱NL_1|⬇️3.9MB/s_2
-  - 🇳🇱NL_2|⬇️4.1MB/s_2
+  - 🇳🇱NL_2|⬇️4.1MB/s_1
   - 🇳🇱NL_6|⬇️5.4MB/s
   - 🇵🇱PL_1|⬇️2.2MB/s_2
+  - 🇵🇱PL_1|⬇️4.6MB/s_2
   - 🇵🇱PL_1|⬇️4.6MB/s_3
-  - 🇵🇱PL_1|⬇️4.6MB/s_4
-  - 🇵🇱PL_10|⬇️4.8MB/s
   - 🇵🇱PL_11|⬇️1.9MB/s
   - 🇵🇱PL_2|⬇️2.5MB/s
-  - 🇵🇱PL_2|⬇️3.2MB/s_1
   - 🇵🇱PL_3|⬇️2.2MB/s
-  - 🇵🇱PL_3|⬇️4.0MB/s_1
   - 🇵🇱PL_4|⬇️3.7MB/s_2
   - 🇵🇱PL_4|⬇️4.1MB/s
   - 🇵🇱PL_5|⬇️4.2MB/s_1
   - 🇵🇱PL_6|⬇️3.7MB/s
   - 🇵🇱PL_6|⬇️4.6MB/s
   - 🇵🇱PL_7|⬇️5.0MB/s
-  - 🇵🇱PL_8|⬇️2.5MB/s
   - 🇵🇱PL_9|⬇️3.8MB/s
-  - 🇹🇷TR_2|⬇️1.2MB/s
-  - 🇹🇷TR_2|⬇️5.5MB/s
-  - 🇺🇸美国01
   - 🇺🇸US_1|⬇️2.1MB/s_2
   - 🇺🇸US_1|⬇️4.4MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_2
-  - 🇺🇸US_3|⬇️4.2MB/s
   - 🇺🇸US_6|⬇️3.6MB/s
-  - 🇺🇸US_8|⬇️2.3MB/s
-  - 🇺🇸US_4|⬇️2.6MB/s
-  - 🇺🇸US_2|⬇️5.8MB/s_3
-  - 🇺🇸US_1|⬇️3.2MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_1
   - 🇵🇱PL_5|⬇️4.2MB/s_2
-  - 🇵🇱PL_3|⬇️4.0MB/s_2
-  - 🇵🇱PL_2|⬇️3.2MB/s_2
-  - 🇵🇱PL_1|⬇️1.0MB/s
-  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_3|⬇️4.0MB/s_1
+  - 🇵🇱PL_1|⬇️1.0MB/s_1
+  - 🇳🇱NL_2|⬇️4.1MB/s_2
   - 🇳🇱NL_1|⬇️3.9MB/s_3
-  - 🇫🇷FR_3|⬇️1.8MB/s
+  - 🇫🇷FR_3|⬇️1.8MB/s_1
   - 🇫🇷FR_2|⬇️1.0MB/s_3
-  - 🇫🇮FI_2|⬇️2.8MB/s
-  - 🇫🇮FI_1|⬇️3.1MB/s
-  - 🇩🇪DE_8|⬇️3.5MB/s
-  - 🇩🇪DE_7|⬇️5.6MB/s
-  - 🇩🇪DE_5|⬇️5.4MB/s
-  - 美國
-  - 🇩🇪DE_14|⬇️3.2MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_1
+  - 🇩🇪DE_3|⬇️5.5MB/s
+  - 🇩🇪DE_4|⬇️4.2MB/s
+  - 🇩🇪DE_8|⬇️3.3MB/s
+  - 🇩🇪DE_8|⬇️3.5MB/s_2
+  - 🇫🇷FR_1|⬇️2.8MB/s
+  - 🇫🇷FR_2|⬇️1.0MB/s_4
+  - 🇫🇷FR_3|⬇️1.8MB/s_2
+  - 🇫🇷FR_3|⬇️2.2MB/s
+  - 🇳🇱NL_1|⬇️1.1MB/s
+  - 🇳🇱NL_1|⬇️3.9MB/s_4
+  - 🇳🇱NL_2|⬇️4.1MB/s_3
+  - 🇵🇱PL_1|⬇️1.0MB/s_2
+  - 🇵🇱PL_2|⬇️3.2MB/s
+  - 🇵🇱PL_3|⬇️4.0MB/s_2
+  - 🇹🇷TR_1|⬇️1.6MB/s
+  - 🇹🇷TR_3|⬇️3.5MB/s
+  - 🇺🇸US_1|⬇️3.2MB/s_2
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
