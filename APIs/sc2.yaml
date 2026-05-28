@@ -1,278 +1,300 @@
 allow-lan: true
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 log-level: info
-mixed-port: 7890
 mode: Rule
+port: 7890
 proxies:
 - alterId: 0
   cipher: auto
   name: 8元老牌专线机场：cczzuu.top
   port: 7754
   server: efan.dnsefan04881.com
-  skip-cert-verify: true
-  tfo: false
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- cipher: aes-256-gcm
-  name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.180.113.194
-  tfo: false
-  type: ss
-- name: 🇭🇰 香港 阿里云
+- name: 🇺🇸 美国 CloudFlare节点
   network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 47.82.178.58
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳
-- name: 🇧🇬 保加利亚 CCZZUU.TOP
-  port: 777
-  server: 93.123.84.128
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: c9424b66-67dd-4dbf-ddbc-752514cc04a5
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  password: Q7cjiVD0oKNE2o9sUnZKQg
-  port: 23243
-  server: 46.101.196.138
-  tfo: false
-  type: ss
-- name: 🇷🇴 罗马尼亚 CCZZUU.TOP
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
-  server: 217.19.4.246
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  server: 104.20.6.134
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
   tfo: false
-  type: trojan
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
+      Host: sni.111000.dynv6.net
+    path: /?Telegram @v2rayngzendegimamad
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧 英国 CCZZUU.TOP
-  port: 443
+  name: 🇩🇰 丹麦 starcorenode.com
+  network: tcp
+  port: 50556
   reality-opts:
-    public-key: _ftr7AiRUt0qvp9EiM4k83zzApIm430inagF_R2--CE
-    short-id: a74c10074f1816d5
-  server: fl.locklance.lol
-  servername: fl.locklance.lol
-  skip-cert-verify: true
+    public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
+    short-id: 23a3dee422d0cd1c
+  server: 193.163.203.76
+  servername: api-maps.yandex.ru
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: be0e7d89-9c35-4950-a460-d3bf5aae5f91
-- name: 🇺🇸 美国 CCZZUU.TOP
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 137.184.122.138
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 华盛顿Cogent通信公司 2
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.54.107.101
-  tfo: false
-  type: ss
-- name: 🇸🇬 新加坡 DigitalOcean数据中心
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 188.166.230.196
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 加拿大 CCZZUU.TOP
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.58.239
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇲🇾 马来西亚 吉隆坡阿里云
-  network: ws
-  port: 8613
-  server: 47.250.45.234
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 CCZZUU.TOP 2
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 45.40.144.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram
-- cipher: aes-256-gcm
-  name: 🇩🇪 德国 CCZZUU.TOP
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 213.202.208.199
-  tfo: false
-  type: ss
-- name: 🇸🇬 新加坡 CCZZUU.TOP
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 164.52.2.98
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳
-- name: 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 27.50.49.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 🇷🇺 俄罗斯 CCZZUU.TOP
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 8443
-  server: 62.182.196.202
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tfo: false
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳+@WangCai2
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 Akamai科技公司CDN网络节点
-  port: 22324
-  server: 172.232.103.186
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 44fcf3b7-7baf-4b73-9f50-9f47967f7b29
 - client-fingerprint: chrome
-  name: 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  port: 40478
-  reality-opts:
-    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
-    short-id: 3c
-  server: 37.233.82.140
-  servername: yahoo.com
-  skip-cert-verify: true
+  name: 🇺🇸 美国 starcorenode.com
+  network: ws
+  port: 2096
+  server: 45.40.147.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
-- name: 🇺🇸 北美地区 CCZZUU.TOP
-  network: ws
-  password: 8r%3C%5B9%27l6hAO%238ZQi
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 美国 starcorenode.com 2
+  network: tcp
   port: 8443
-  server: 134.195.211.140
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
+  reality-opts:
+    public-key: N0QyBaacGqSpRv_Ib4jsSx5A1kfE8IE1w0HcDB5w1BE
+  server: 45.141.234.170
+  servername: www.google.com
+  skip-cert-verify: false
   tfo: false
+  tls: true
+  type: vless
+  uuid: 10e82fcc-94ec-4d09-8855-579bb55b77e4
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 CloudFlare节点 2
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.64.229.75
+  skip-cert-verify: false
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram
+      Host: www.calmloud.com
+    path: /assignment
+- name: 🇺🇸 美国 CloudFlare节点 3
+  network: ws
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  port: 443
+  server: cloudflare-ip.mofashi.ltd
+  skip-cert-verify: false
+  sni: aa.beijng.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aa.beijng.dpdns.org
+    path: /?ed=2048
+- name: 🇺🇸 美国 starcorenode.com 3
+  network: ws
+  port: 2096
+  server: 155.46.167.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 starcorenode.com
+  port: 180
+  server: 82.198.246.214
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 🇺🇸 美国 CloudFlare节点 4
+  network: ws
+  port: 2095
+  server: www.epicgames.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing-nmsl.cnmfangbinxing-0.workers.dev
+    path: /
+- name: 🇺🇸 美国 CloudFlare节点 5
+  network: ws
+  port: 80
+  server: 104.18.14.19
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
+  ws-opts:
+    headers:
+      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
+    path: /
+- name: 🇺🇸 美国 CloudFlare节点 6
+  network: ws
+  port: 2053
+  server: ciallo-egb.pages.dev
+  servername: Ciallo-eGB.PageS.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: Ciallo-eGB.PageS.dev
+    path: /%252F
+- name: 🇺🇸 美国 CloudFlare节点 7
+  network: ws
+  port: 80
+  server: 104.20.6.134
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  ws-opts:
+    headers:
+      Host: vip.yaml7.ggff.net
+    path: / @ProxyVPN11
+- name: 🇺🇸 美国 CloudFlare节点 8
+  network: ws
+  port: 2052
+  server: 104.20.6.134
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: index.0x14.workers.dev
+    path: /
+- name: 🇩🇰 丹麦 starcorenode.com 2
+  network: ws
+  port: 8880
+  server: 195.85.23.30
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime57.workers.dev
+    path: /
+- name: 🇺🇸 美国 starcorenode.com 4
+  network: ws
+  port: 443
+  server: 167.68.5.191
+  servername: sni.my111000.tech
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.my111000.tech
+    path: /
+- name: 🇿🇦 南非 starcorenode.com
+  network: ws
+  port: 8880
+  server: 102.177.189.30
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime29.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 starcorenode.com 2
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 🇩🇪 德国 starcorenode.com
+  network: ws
+  port: 8880
+  server: 91.206.71.50
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime15.workers.dev
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - ♻️ 自动选择
   - DIRECT
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -282,100 +304,96 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - name: 📢 谷歌FCM
   proxies:
@@ -383,25 +401,24 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -425,25 +442,24 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇭🇰 香港 阿里云
-  - 🇧🇬 保加利亚 CCZZUU.TOP
-  - 🇩🇪 德国 黑森州法兰克福DigitalOcean数据中心
-  - 🇷🇴 罗马尼亚 CCZZUU.TOP
-  - 🇬🇧 英国 CCZZUU.TOP
-  - 🇺🇸 美国 CCZZUU.TOP
-  - 🇺🇸 美国 华盛顿Cogent通信公司 2
-  - 🇸🇬 新加坡 DigitalOcean数据中心
-  - 🇨🇦 加拿大 CCZZUU.TOP
-  - 🇲🇾 马来西亚 吉隆坡阿里云
-  - 🇺🇸 美国 CCZZUU.TOP 2
-  - 🇩🇪 德国 CCZZUU.TOP
-  - 🇸🇬 新加坡 CCZZUU.TOP
-  - 🇭🇰 香港 数掘科技gfvps.cn数据中心
-  - 🇷🇺 俄罗斯 CCZZUU.TOP
-  - 🇺🇸 美国 Akamai科技公司CDN网络节点
-  - 🇷🇺 俄罗斯 CCZZUU.TOP 2
-  - 🇺🇸 北美地区 CCZZUU.TOP
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇩🇰 丹麦 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare节点 2
+  - 🇺🇸 美国 CloudFlare节点 3
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇧 英国 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 4
+  - 🇺🇸 美国 CloudFlare节点 5
+  - 🇺🇸 美国 CloudFlare节点 6
+  - 🇺🇸 美国 CloudFlare节点 7
+  - 🇺🇸 美国 CloudFlare节点 8
+  - 🇩🇰 丹麦 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 4
+  - 🇿🇦 南非 starcorenode.com
+  - 🇬🇧 英国 starcorenode.com 2
+  - 🇩🇪 德国 starcorenode.com
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -3965,3 +3981,4 @@ rules:
 - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
 - GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
+socks-port: 7891
