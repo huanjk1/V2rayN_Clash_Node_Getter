@@ -13,71 +13,69 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: 🇺🇸 美国 CloudFlare节点
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 8443
-  server: 104.20.6.134
-  servername: sni.111000.dynv6.net
+  port: 443
+  server: 104.25.245.127
+  servername: juzi.qea.ccwu.cc
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   ws-opts:
     headers:
-      Host: sni.111000.dynv6.net
-    path: /?Telegram @v2rayngzendegimamad
+      Host: juzi.qea.ccwu.cc
+    path: /fp=chrome
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇰 丹麦 starcorenode.com
+  name: 🇷🇺 俄罗斯 starcorenode.com
   network: tcp
-  port: 50556
+  port: 443
   reality-opts:
-    public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
-    short-id: 23a3dee422d0cd1c
-  server: 193.163.203.76
-  servername: api-maps.yandex.ru
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
+  server: 194.226.169.36
+  servername: yahoo.com
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 44fcf3b7-7baf-4b73-9f50-9f47967f7b29
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 🇺🇸 美国 starcorenode.com
-  network: ws
-  port: 2096
-  server: 45.40.147.138
-  servername: sni.111000.indevs.in
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇺🇸 美国 starcorenode.com 2
   network: tcp
-  port: 8443
+  port: 7443
   reality-opts:
-    public-key: N0QyBaacGqSpRv_Ib4jsSx5A1kfE8IE1w0HcDB5w1BE
-  server: 45.141.234.170
-  servername: www.google.com
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+  server: 152.53.224.29
+  servername: stackoverflow.com
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 10e82fcc-94ec-4d09-8855-579bb55b77e4
+  uuid: 4350fd8e-9f5d-47e7-a5f6-6161e0f7db9b
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 🇷🇺 俄罗斯 starcorenode.com 2
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - alpn:
-  - http/1.1
+  - http%2F1.1
   name: 🇺🇸 美国 CloudFlare节点 2
   network: ws
   password: humanity
   port: 443
-  server: 172.64.229.75
+  server: 104.20.6.134
   skip-cert-verify: false
   sni: www.calmloud.com
   type: trojan
@@ -85,169 +83,70 @@ proxies:
     headers:
       Host: www.calmloud.com
     path: /assignment
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 英国 South Cheshire College
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
+    short-id: 5d
+  server: 194.238.57.104
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇧🇬 保加利亚 starcorenode.com
+  network: tcp
+  port: 443
+  server: 87.120.93.131
+  servername: sub.sbrf-cdn342.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+- client-fingerprint: chrome
+  name: 🇷🇺 俄罗斯 starcorenode.com 3
+  network: tcp
+  port: 16622
+  reality-opts:
+    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
+    short-id: 1c01d60ea915
+  server: 77.73.238.191
+  servername: yahoo.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
 - name: 🇺🇸 美国 CloudFlare节点 3
   network: ws
-  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
   port: 443
-  server: cloudflare-ip.mofashi.ltd
-  skip-cert-verify: false
-  sni: aa.beijng.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aa.beijng.dpdns.org
-    path: /?ed=2048
-- name: 🇺🇸 美国 starcorenode.com 3
-  network: ws
-  port: 2096
-  server: 155.46.167.138
-  servername: sni.111000.indevs.in
+  server: 104.25.242.55
+  servername: juzi.qea.ccwu.cc
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   ws-opts:
     headers:
-      Host: sni.111000.indevs.in
+      Host: juzi.qea.ccwu.cc
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 英国 starcorenode.com
-  port: 180
-  server: 82.198.246.214
+  name: 亚太地区 starcorenode.com
+  port: 54022
+  server: 103.181.164.145
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇺🇸 美国 CloudFlare节点 4
-  network: ws
-  port: 2095
-  server: www.epicgames.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: cnmfangbinxing-nmsl.cnmfangbinxing-0.workers.dev
-    path: /
-- name: 🇺🇸 美国 CloudFlare节点 5
-  network: ws
-  port: 80
-  server: 104.18.14.19
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
-  ws-opts:
-    headers:
-      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
-    path: /
-- name: 🇺🇸 美国 CloudFlare节点 6
-  network: ws
-  port: 2053
-  server: ciallo-egb.pages.dev
-  servername: Ciallo-eGB.PageS.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: Ciallo-eGB.PageS.dev
-    path: /%252F
-- name: 🇺🇸 美国 CloudFlare节点 7
-  network: ws
-  port: 80
-  server: 104.20.6.134
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
-    path: / @ProxyVPN11
-- name: 🇺🇸 美国 CloudFlare节点 8
-  network: ws
-  port: 2052
-  server: 104.20.6.134
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: index.0x14.workers.dev
-    path: /
-- name: 🇩🇰 丹麦 starcorenode.com 2
-  network: ws
-  port: 8880
-  server: 195.85.23.30
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime57.workers.dev
-    path: /
-- name: 🇺🇸 美国 starcorenode.com 4
-  network: ws
-  port: 443
-  server: 167.68.5.191
-  servername: sni.my111000.tech
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.my111000.tech
-    path: /
-- name: 🇿🇦 南非 starcorenode.com
-  network: ws
-  port: 8880
-  server: 102.177.189.30
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime29.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 starcorenode.com 2
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇩🇪 德国 starcorenode.com
-  network: ws
-  port: 8880
-  server: 91.206.71.50
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime15.workers.dev
-    path: /?https://t.me/YouTube@小青科学网🇨🇳
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
@@ -255,46 +154,30 @@ proxy-groups:
   - DIRECT
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -305,23 +188,15 @@ proxy-groups:
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - name: 📲 电报信息
   proxies:
@@ -329,23 +204,15 @@ proxy-groups:
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
@@ -353,23 +220,15 @@ proxy-groups:
   - 🚀 节点选择
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - name: 🍎 苹果服务
   proxies:
@@ -377,23 +236,15 @@ proxy-groups:
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - name: 📢 谷歌FCM
   proxies:
@@ -402,23 +253,15 @@ proxy-groups:
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -443,23 +286,15 @@ proxy-groups:
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
   - 🇺🇸 美国 CloudFlare节点
-  - 🇩🇰 丹麦 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com
   - 🇺🇸 美国 starcorenode.com
-  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇺 俄罗斯 starcorenode.com 2
   - 🇺🇸 美国 CloudFlare节点 2
+  - 🇬🇧 英国 South Cheshire College
+  - 🇧🇬 保加利亚 starcorenode.com
+  - 🇷🇺 俄罗斯 starcorenode.com 3
   - 🇺🇸 美国 CloudFlare节点 3
-  - 🇺🇸 美国 starcorenode.com 3
-  - 🇬🇧 英国 starcorenode.com
-  - 🇺🇸 美国 CloudFlare节点 4
-  - 🇺🇸 美国 CloudFlare节点 5
-  - 🇺🇸 美国 CloudFlare节点 6
-  - 🇺🇸 美国 CloudFlare节点 7
-  - 🇺🇸 美国 CloudFlare节点 8
-  - 🇩🇰 丹麦 starcorenode.com 2
-  - 🇺🇸 美国 starcorenode.com 4
-  - 🇿🇦 南非 starcorenode.com
-  - 🇬🇧 英国 starcorenode.com 2
-  - 🇩🇪 德国 starcorenode.com
+  - 亚太地区 starcorenode.com
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -2143,6 +1978,15 @@ rules:
 - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
 - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
 - DOMAIN,mtalk.google.com,📢 谷歌FCM
+- DOMAIN,alt1.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt2.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt3.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt4.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt5.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt6.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt7.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,alt8.mobile-gtalk.l.google.com,📢 谷歌FCM
+- DOMAIN,mobile-gtalk.l.google.com,📢 谷歌FCM
 - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
 - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
 - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
