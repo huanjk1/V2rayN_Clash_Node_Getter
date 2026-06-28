@@ -13,42 +13,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: 🇧🇷 巴西圣保罗 CloudFlare节点
-  network: ws
-  password: humanity
+- name: 🇺🇸 美国 华盛顿Cogent通信公司
+  password: ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed
   port: 443
-  server: 188.114.98.0
+  server: 38.60.202.163
   skip-cert-verify: false
-  sni: www.calmlunch.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: 🇺🇸 美国 CloudFlare节点
-  network: ws
-  password: humanity
+- alpn:
+  - h2%2Chttp%2F1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸 美国 starcorenode.com
+  network: tcp
   port: 443
-  server: 104.20.6.134
+  server: 166.88.197.161
+  servername: u691611us4071.wagahaha.xyz
   skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
 - name: 🇬🇷 希腊 starcorenode.com
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
   port: 443
-  server: 92.119.35.127
+  server: 92.119.35.120
   skip-cert-verify: false
-  type: trojan
-- name: 🇷🇴 罗马尼亚 starcorenode.com
-  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
-  port: 443
-  server: 185.137.157.154
-  skip-cert-verify: false
-  sni: fra154.clientfirewall.click
   type: trojan
 - name: 🇬🇷 希腊 starcorenode.com 2
   password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
@@ -56,33 +45,44 @@ proxies:
   server: 92.119.35.123
   skip-cert-verify: false
   type: trojan
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 CloudFlare节点 2
+- name: 🇺🇸 美国 CloudFlare
   network: ws
   port: 443
-  server: another-cf.dnsyes.kawaii520.icu
-  servername: tt86554he5f4jb8ezvry6v8us.another-appleid.ccwu.cc
+  server: 162.159.19.67
+  servername: nbhhh.mrcool.kdns.fr
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 7b3c9cec-6a21-4d57-b9c9-383d519e0b27
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
   ws-opts:
     headers:
-      Host: tt86554he5f4jb8ezvry6v8us.another-appleid.ccwu.cc
-    path: /gateway/ws/a8d2f91c
-- name: 🇷🇴 罗马尼亚 starcorenode.com 2
-  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
+      Host: nbhhh.mrcool.kdns.fr
+    path: /
+- alpn:
+  - h2%2Chttp%2F1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇮🇪 爱尔兰 starcorenode.com
+  network: tcp
   port: 443
-  server: 185.137.157.250
+  server: 89.125.151.77
+  servername: u691611ue085e3c9s4031.wagahaha.xyz
   skip-cert-verify: false
-  sni: fra250.clientfirewall.click
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9794d18f-9280-3553-a7a5-a23da75aca76
+- name: 🇬🇷 希腊 starcorenode.com 3
+  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
+  port: 443
+  server: 92.119.35.125
+  skip-cert-verify: false
   type: trojan
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 CloudFlare节点 3
+- name: 🇺🇸 美国 CloudFlare节点
   network: ws
   port: 443
-  server: 104.26.4.60
+  server: 172.64.40.84
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -92,19 +92,80 @@ proxies:
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
+    path: /fp=chrome
+- name: 🇷🇴 罗马尼亚 starcorenode.com
+  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
+  port: 443
+  server: 185.137.157.154
+  skip-cert-verify: false
+  sni: fra154.clientfirewall.click
+  type: trojan
+- name: 🇺🇸 美国 starcorenode.com 2
+  password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K
+  port: 443
+  server: 207.126.167.162
+  skip-cert-verify: false
+  type: trojan
+- name: 🇷🇴 罗马尼亚 starcorenode.com 2
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.145
+  skip-cert-verify: false
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 starcorenode.com 3
+  network: ws
+  password: Mitivpn
+  port: 443
+  server: 167.82.101.251
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+    path: /de
+- name: 🇬🇷 希腊 starcorenode.com 4
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+  port: 443
+  server: 92.119.35.131
+  skip-cert-verify: false
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇦🇺 澳大利亚 starcorenode.com
+  password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+  port: 27116
+  server: 104.156.233.234
+  type: ss
+- name: 🇯🇵 日本 starcorenode.com
+  network: ws
+  port: 3389
+  server: 43.163.89.186
+  servername: c.eoa.ccwu.cc
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 03d73bc8-01a9-46a7-90b9-3d27065ed328
+  ws-opts:
+    headers:
+      Host: c.eoa.ccwu.cc
     path: /
-- name: 🇺🇸 美国 华盛顿Cogent通信公司
-  password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
+- name: 🇺🇸 美国 CloudFlare节点 2
+  network: ws
   port: 443
-  server: 38.60.136.156
+  server: 104.16.75.223
+  servername: server-ir-7.ariyuz.org
   skip-cert-verify: false
-  type: trojan
-- name: 🇬🇧 英国 伦敦Choopa数据中心
-  password: kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP
-  port: 443
-  server: 45.77.227.183
-  skip-cert-verify: false
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b26ec0f4-6c92-45f7-b287-2a664abf1963
+  ws-opts:
+    headers:
+      Host: server-ir-7.ariyuz.org
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇷🇴 罗马尼亚 starcorenode.com 3
@@ -126,32 +187,44 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   tolerance: 50
   type: url-test
@@ -162,16 +235,22 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - name: 📲 电报信息
@@ -179,16 +258,22 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - name: Ⓜ️ 微软服务
@@ -196,16 +281,22 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - name: 🍎 苹果服务
@@ -213,16 +304,22 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - name: 📢 谷歌FCM
@@ -231,16 +328,22 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 - name: 🎯 全球直连
@@ -265,16 +368,22 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 8元老牌专线机场：cczzuu.top
-  - 🇧🇷 巴西圣保罗 CloudFlare节点
-  - 🇺🇸 美国 CloudFlare节点
-  - 🇬🇷 希腊 starcorenode.com
-  - 🇷🇴 罗马尼亚 starcorenode.com
-  - 🇬🇷 希腊 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 2
-  - 🇷🇴 罗马尼亚 starcorenode.com 2
-  - 🇺🇸 美国 CloudFlare节点 3
   - 🇺🇸 美国 华盛顿Cogent通信公司
-  - 🇬🇧 英国 伦敦Choopa数据中心
+  - 🇺🇸 美国 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 2
+  - 🇺🇸 美国 CloudFlare
+  - 🇮🇪 爱尔兰 starcorenode.com
+  - 🇬🇷 希腊 starcorenode.com 3
+  - 🇺🇸 美国 CloudFlare节点
+  - 🇷🇴 罗马尼亚 starcorenode.com
+  - 🇺🇸 美国 starcorenode.com 2
+  - 🇷🇴 罗马尼亚 starcorenode.com 2
+  - 🇺🇸 美国 starcorenode.com 3
+  - 🇬🇷 希腊 starcorenode.com 4
+  - 🇦🇺 澳大利亚 starcorenode.com
+  - 🇯🇵 日本 starcorenode.com
+  - 🇺🇸 美国 CloudFlare节点 2
   - 🇷🇴 罗马尼亚 starcorenode.com 3
   type: select
 rules:
