@@ -8,26 +8,17 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
-- name: 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
-  port: 0
-  server: '@...'
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
+  port: 80
+  server: 217.142.138.61
   skip-cert-verify: true
-  type: socks5
+  tls: false
+  type: vmess
   udp: true
+  uuid: ac1b933d-afff-4487-93ef-f57130a55dff
 - name: 🇺🇸 US美国(mibei77.com 米贝节点分享)
-  network: ws
-  password: humanity
-  port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.creationlong.org
-    path: /assignment
-- name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   network: ws
   password: humanity
   port: 443
@@ -40,7 +31,7 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+- name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   network: ws
   password: humanity
   port: 443
@@ -53,12 +44,25 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
+- name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.creationlong.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.creationlong.org
+    path: /assignment
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -66,7 +70,7 @@ proxy-groups:
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -78,7 +82,7 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -87,7 +91,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -96,7 +100,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -105,7 +109,7 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -115,7 +119,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
@@ -141,7 +145,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇸🇬 SG新加坡(mibei77.com 米贝节点分享)
+  - 🇰🇷 KR韩国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享)
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
   - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
