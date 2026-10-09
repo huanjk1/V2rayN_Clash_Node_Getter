@@ -24,11 +24,79 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
-- name: 荷兰(mibei77.com 米贝节点分享)
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 阿拉伯(mibei77.com 米贝节点分享)
+  port: 443
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.160.166
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 阿拉伯(mibei77.com 米贝节点分享)_1
+  port: 443
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.160.166
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 阿拉伯(mibei77.com 米贝节点分享)_2
+  port: 443
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.160.166
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 奥地利(mibei77.com 米贝节点分享)
+  port: 443
+  reality-opts:
+    public-key: Dj1TD7Sy_TciG915ffXFpMu_pYHnrpGo_ypyyDw44Uc
+    short-id: 8fbdc8d37cc76852
+  server: 185.104.63.173
+  servername: zsat.eu-cdn294.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+- client-fingerprint: chrome
+  name: 芬兰(mibei77.com 米贝节点分享)
+  network: ws
+  port: 443
+  server: 209.206.51.240
+  servername: and-75r.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 573c6482-37db-454a-8c31-5b45a338a580
+  ws-opts:
+    path: /
+- name: 立陶宛(mibei77.com 米贝节点分享)
   network: ws
   port: 8880
-  server: 45.131.210.30
-  servername: vms.lifetime05.workers.dev
+  server: 89.117.112.30
   skip-cert-verify: true
   tls: false
   type: vless
@@ -36,8 +104,59 @@ proxies:
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: vms.lifetime05.workers.dev
+      Host: vms.lifetime11.workers.dev
     path: /
+- name: 罗马尼亚(mibei77.com 米贝节点分享)
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.107
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: 南非(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8443
+  server: 156.38.157.171
+  servername: vlso5.1d.mom
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 挪威(mibei77.com 米贝节点分享)
+  port: 443
+  reality-opts:
+    public-key: B1g2P-3yW3cQW0WZweSPKUP3lZSQ5pgr8doCYvA0cRg
+    short-id: df3dc12b0b9b0c93
+  server: c5fl8w.api-gate.org
+  servername: ca9.eu-cdn294.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+- name: 挪威(mibei77.com 米贝节点分享)_1
+  network: ws
+  port: 2053
+  server: 8.47.69.0
+  servername: vless.api-music-fa.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  ws-opts:
+    headers:
+      Host: fr.api-music-fa.com
+    path: /api/voip/updates/static/fr2035
 - client-fingerprint: android
   name: 乌克兰(mibei77.com 米贝节点分享)
   network: ws
@@ -53,20 +172,20 @@ proxies:
     headers:
       Host: proxy-1cu.pages.dev
     path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 西班牙(mibei77.com 米贝节点分享)
-  port: 57667
-  server: 195.170.172.139
-  servername: u695098u6b6f0dd0s2057.gogocs.xyz
+- name: 乌克兰(mibei77.com 米贝节点分享)_1
+  network: ws
+  port: 8880
+  server: 104.16.72.41
+  servername: summer-butterfly-cbc8.26-971.workers.dev
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  uuid: 28201cd6-c2a9-4703-a31b-eaf31ecb18fd
+  ws-opts:
+    headers:
+      Host: summer-butterfly-cbc8.26-971.workers.dev
+    path: /pyip
 - client-fingerprint: randomized
   flow: xtls-rprx-vision
   name: 伊朗(mibei77.com 米贝节点分享)
@@ -81,59 +200,8 @@ proxies:
   type: vless
   udp: true
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: 伊朗(mibei77.com 米贝节点分享)_1
-  port: 443
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  server: de2.srv.vbuste.ru
-  servername: de2.srv.vbuste.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: AU澳大利亚(mibei77.com 米贝节点分享)
-  port: 2063
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  server: pl-waw.dontblockmepls.com
-  servername: rusbid.de
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-- name: AU澳大利亚(mibei77.com 米贝节点分享)_1
-  password: humanity
-  port: 443
-  server: 104.25.109.237
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: AU澳大利亚(mibei77.com 米贝节点分享)_2
-  port: 443
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  server: de2.srv.vbuste.ru
-  servername: de2.srv.vbuste.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
 - client-fingerprint: android
-  name: AU澳大利亚(mibei77.com 米贝节点分享)_3
+  name: AU澳大利亚(mibei77.com 米贝节点分享)
   network: ws
   port: 443
   server: 103.43.75.82
@@ -147,34 +215,6 @@ proxies:
     headers:
       Host: proxy-1cu.pages.dev
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: AU澳大利亚(mibei77.com 米贝节点分享)_4
-  port: 443
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: AU澳大利亚(mibei77.com 米贝节点分享)_5
-  port: 443
-  reality-opts:
-    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-    short-id: 3cef317b
-  server: 157.228.150.34
-  servername: addons.mozilla.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
 - client-fingerprint: chrome
   name: CA加拿大(mibei77.com 米贝节点分享)
   network: ws
@@ -265,22 +305,8 @@ proxies:
     headers:
       Host: helloapps.cc.cd
     path: /
-- name: CA加拿大(mibei77.com 米贝节点分享)_6
-  network: ws
-  port: 443
-  server: saas.sin.fan
-  servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
 - client-fingerprint: chrome
-  name: CA加拿大(mibei77.com 米贝节点分享)_7
+  name: CA加拿大(mibei77.com 米贝节点分享)_6
   network: ws
   port: 443
   server: 209.206.51.240
@@ -295,49 +321,7 @@ proxies:
       Host: and-75r.pages.dev
     path: /
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: DE德国(mibei77.com 米贝节点分享)
-  port: 443
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: DE德国(mibei77.com 米贝节点分享)_1
-  port: 443
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: DE德国(mibei77.com 米贝节点分享)_2
-  port: 443
-  reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  server: 31.77.109.35
-  servername: d3-de1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: chrome
-  name: DE德国(mibei77.com 米贝节点分享)_3
   network: ws
   port: 2040
   server: 188.245.191.19
@@ -351,117 +335,126 @@ proxies:
     headers:
       Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
     path: /@Marisa_kristi
-- client-fingerprint: ios
+- client-fingerprint: randomized
   flow: xtls-rprx-vision
-  name: DE德国(mibei77.com 米贝节点分享)_4
+  name: DE德国(mibei77.com 米贝节点分享)_1
   port: 443
   reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  server: 31.77.109.35
-  servername: d3-de1.cloud-cdn.xyz
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: de2.srv.vbuste.ru
+  servername: de2.srv.vbuste.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- name: DE德国(mibei77.com 米贝节点分享)_2
+  network: ws
+  port: 8880
+  server: 185.148.104.30
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- client-fingerprint: random
+  name: DE德国(mibei77.com 米贝节点分享)_3
+  network: ws
+  port: 443
+  server: cf.3666888.xyz
+  servername: 20664.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
+  ws-opts:
+    headers:
+      Host: 20664.pages.dev
+    path: /?ed=2048
 - client-fingerprint: chrome
+  name: DE德国(mibei77.com 米贝节点分享)_4
+  network: ws
+  port: 443
+  server: cf.130519.xyz
+  servername: cf-1rm.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  ws-opts:
+    headers:
+      Host: cf-1rm.pages.dev
+    path: /
+- client-fingerprint: randomized
   flow: xtls-rprx-vision
   name: DE德国(mibei77.com 米贝节点分享)_5
   port: 443
   reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  server: 31.77.109.35
-  servername: d3-de1.cloud-cdn.xyz
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 177.1.187.251
+  servername: de2.srv.vbuste.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: safari
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- client-fingerprint: random
   flow: xtls-rprx-vision
   name: DE德国(mibei77.com 米贝节点分享)_6
   port: 443
   reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
+    public-key: HXFe_cPryw01zqXchAFjZciDAS4UJg1-xScx6vjgjjY
+    short-id: 7f2e9c4b1a8d6e25
+  server: 159.195.239.91
+  servername: usself.yandex-api.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.Y0-j5e-CpehUKzhEeat1dTYevroKyHV4g9HML3ujmlQ
   name: DE德国(mibei77.com 米贝节点分享)_7
+  network: xhttp
   port: 443
   reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
+    public-key: IqFTx4k5VQydmffvavaOHDXBtdgDxX26A6NtsVvDfhw
+    short-id: d485c3d5248d6b51
+  server: 2.28.142.170
+  servername: germanytest.tulnaro.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: edge
+  uuid: f774f037-6320-42e3-a97b-6d4a1f018dd5
+  xhttp-opts:
+    host: germanytest.tulnaro.ir
+    mode: auto
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- client-fingerprint: random
   flow: xtls-rprx-vision
   name: DE德国(mibei77.com 米贝节点分享)_8
   port: 443
   reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
+    public-key: HXFe_cPryw01zqXchAFjZciDAS4UJg1-xScx6vjgjjY
+    short-id: 7f2e9c4b1a8d6e25
+  server: usself.yandex-api.com
+  servername: usself.yandex-api.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: DE德国(mibei77.com 米贝节点分享)_9
-  port: 443
-  reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  server: 31.77.109.35
-  servername: d3-de1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- alpn:
-  - http/1.1
-  name: DE德国(mibei77.com 米贝节点分享)_10
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: FR法国(mibei77.com 米贝节点分享)
-  port: 14343
-  server: 27.44.143.169
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
 - client-fingerprint: android
-  name: FR法国(mibei77.com 米贝节点分享)_1
+  name: FR法国(mibei77.com 米贝节点分享)
   network: ws
   port: 2087
   server: 103.116.7.100
@@ -474,6 +467,22 @@ proxies:
   ws-opts:
     headers:
       Host: proxy-1cu.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: FR法国(mibei77.com 米贝节点分享)_1
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: nePVxxnByjxR4YMlM8dUl1bedOy72r578aNwNJxCdDI
+    short-id: 9f3c1a7b2d8e6041
+  server: 45.39.255.74
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67bb6612-261d-47b5-811e-aa2aeb2100c7
+  xhttp-opts:
     path: /
 - client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.Y0-j5e-CpehUKzhEeat1dTYevroKyHV4g9HML3ujmlQ
@@ -494,230 +503,123 @@ proxies:
     host: germanytest.tulnaro.ir
     mode: auto
     path: /
-- client-fingerprint: firefox
+- client-fingerprint: randomized
   flow: xtls-rprx-vision
   name: GB英国(mibei77.com 米贝节点分享)_1
   port: 443
   reality-opts:
-    public-key: SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY
-    short-id: 494afdc75f8c2fa8
-  server: 31.77.109.35
-  servername: d3-de1.cloud-cdn.xyz
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.160.166
+  servername: addons.mozilla.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)
-  port: 14343
-  server: 27.44.143.169
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-- client-fingerprint: chrome
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: GB英国(mibei77.com 米贝节点分享)_2
+  port: 10829
+  server: 193.142.59.97
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- name: HK香港(mibei77.com 米贝节点分享)
+  network: ws
+  port: 8443
+  server: 129.211.188.184
+  servername: jp3.yohototo.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: unsafe
   name: HK香港(mibei77.com 米贝节点分享)_1
-  port: 14343
-  server: 27.155.117.209
-  servername: thuk.huaweiyouxuan.com
+  network: ws
+  port: 8443
+  server: 129.211.188.184
+  servername: jp3.yohototo.top
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- alpn:
+  - h2
+  client-fingerprint: firefox
   name: HK香港(mibei77.com 米贝节点分享)_2
-  port: 33102
-  server: 112.49.63.11
-  servername: sgg.knhqf.com
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: HK香港(mibei77.com 米贝节点分享)_3
-  port: 33102
-  server: 27.155.117.209
-  servername: sgg.knhqf.com
+  network: ws
+  port: 8443
+  server: 103.253.42.37
+  servername: vlso5.1d.mom
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- client-fingerprint: chrome
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: HK香港(mibei77.com 米贝节点分享)_4
-  port: 33102
-  server: 27.44.143.169
-  servername: sgg.knhqf.com
+  port: 443
+  server: 212.192.15.191
+  servername: u695098u54d73951s298.kukuss.top
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- flow: xtls-rprx-vision
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
   name: HK香港(mibei77.com 米贝节点分享)_5
-  port: 33102
-  server: 27.44.143.169
-  servername: sgg.knhqf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_6
-  port: 14343
-  server: 14.17.78.144
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-- name: HK香港(mibei77.com 米贝节点分享)_7
-  network: ws
-  port: 8443
-  server: 129.211.188.184
-  servername: jp3.yohototo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_8
-  port: 14343
-  server: 14.17.78.146
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-- client-fingerprint: unsafe
-  name: HK香港(mibei77.com 米贝节点分享)_9
-  network: ws
-  port: 8443
-  server: 129.211.188.184
-  servername: jp3.yohototo.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_10
-  port: 14343
-  server: 36.248.14.90
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-- client-fingerprint: firefox
-  name: HK香港(mibei77.com 米贝节点分享)_11
-  network: ws
   port: 443
-  server: 175.29.23.179
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  server: s151.gogocs.xyz
+  servername: u695098u54d73951s298.kukuss.top
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-    path: /glasspanel/guest000_0_5de14443985f/
-- name: HK香港(mibei77.com 米贝节点分享)_12
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  skip-cert-verify: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  tls: true
-  type: anytls
-  udp: true
-- name: HK香港(mibei77.com 米贝节点分享)_13
-  network: ws
-  port: 443
-  server: 175.29.23.179
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-    path: /glasspanel/guest000_0_5de14443985f/
-- flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_14
-  port: 33102
-  server: 27.155.117.209
-  servername: sgg.knhqf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_15
-  port: 33102
-  server: 112.49.63.11
-  servername: sgg.knhqf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- name: HK香港(mibei77.com 米贝节点分享)_16
-  password: humanity
-  port: 443
-  server: 104.21.13.204
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: HK香港(mibei77.com 米贝节点分享)_17
-  port: 443
-  reality-opts:
-    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
-    short-id: 87cc0414902bee2d
-  server: 150.241.80.113
-  servername: nl.skfv-mirror.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - client-fingerprint: android
   name: JP日本(mibei77.com 米贝节点分享)
   network: ws
@@ -733,66 +635,127 @@ proxies:
     headers:
       Host: proxy-1cu.pages.dev
     path: /
-- client-fingerprint: firefox
-  name: JP日本(mibei77.com 米贝节点分享)_1
-  port: 25895
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: NL荷兰(mibei77.com 米贝节点分享)
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: NL荷兰(mibei77.com 米贝节点分享)_1
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: NL荷兰(mibei77.com 米贝节点分享)_2
+  port: 443
   reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  server: ee.h1cloud.net
-  servername: www.samsung.com
+    public-key: qmfrMwVYth3lsYuv7qfr22YlTIlNtVjMl0v4Z5pX7hM
+    short-id: 87cc0414902bee2d
+  server: 150.241.80.113
+  servername: nl.skfv-mirror.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: JP日本(mibei77.com 米贝节点分享)_2
+  name: NL荷兰(mibei77.com 米贝节点分享)_3
   port: 443
-  server: 62.105.220.106
-  servername: u695098u7dae9c0cs220.gogocs.xyz
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.150.34
+  servername: addons.mozilla.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: JP日本(mibei77.com 米贝节点分享)_3
+  name: RU俄罗斯(mibei77.com 米贝节点分享)
   port: 443
-  server: s251.wagahaha.xyz
-  servername: u695098u47d2e9bes71.gogocs.xyz
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: de2.srv.vbuste.ru
+  servername: de2.srv.vbuste.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: JP日本(mibei77.com 米贝节点分享)_4
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1043
-  server: nv50244o.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: pe-wy.9999231.xyz
-  tls: true
-  type: anytls
-  udp: true
-- flow: xtls-rprx-vision
-  name: JP日本(mibei77.com 米贝节点分享)_5
-  port: 14343
-  server: 36.248.14.90
-  servername: thuk.huaweiyouxuan.com
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: astracat
+  name: RU俄罗斯(mibei77.com 米贝节点分享)_1
+  network: grpc
+  port: 2088
+  reality-opts:
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  server: 31.59.210.26
+  servername: www.yandex.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: RU俄罗斯(mibei77.com 米贝节点分享)_2
+  port: 443
+  reality-opts:
+    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
+  server: 159.194.250.154
+  servername: api-maps.yandex.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: API
+  name: RU俄罗斯(mibei77.com 米贝节点分享)_3
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  server: 185.147.26.207
+  servername: ru-pro.sworkingvpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
 - client-fingerprint: chrome
   name: SG新加坡(mibei77.com 米贝节点分享)
   network: ws
@@ -823,90 +786,8 @@ proxies:
     headers:
       Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
     path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: SG新加坡(mibei77.com 米贝节点分享)_2
-  port: 33102
-  server: 112.49.63.11
-  servername: sgg.knhqf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- name: SG新加坡(mibei77.com 米贝节点分享)_3
-  port: 33102
-  server: 27.44.143.169
-  servername: sgg.knhqf.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- name: SG新加坡(mibei77.com 米贝节点分享)_4
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1001
-  server: l3hl4mwo.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: tw01.9999231.xyz
-  tls: true
-  type: anytls
-  udp: true
-- name: TW台湾(mibei77.com 米贝节点分享)
-  password: 9sK2mP8xQ7vL3nZ6
-  port: 443
-  server: awefd2313fefarg23fr24.pnuqcnp.cn
-  skip-cert-verify: true
-  tls: true
-  type: anytls
-  udp: true
-- name: US美国(mibei77.com 米贝节点分享)
-  password: mitivpn
-  port: 443
-  server: 167.82.76.27
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: US美国(mibei77.com 米贝节点分享)_1
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-- name: US美国(mibei77.com 米贝节点分享)_2
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_3
-  port: 14343
-  server: 14.17.78.146
-  servername: thuk.huaweiyouxuan.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
 - client-fingerprint: unsafe
-  name: US美国(mibei77.com 米贝节点分享)_4
+  name: US美国(mibei77.com 米贝节点分享)
   network: ws
   port: 443
   server: 104.21.70.21
@@ -918,7 +799,7 @@ proxies:
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   ws-opts:
     path: /ws
-- name: US美国(mibei77.com 米贝节点分享)_5
+- name: US美国(mibei77.com 米贝节点分享)_1
   password: github.com/Alvin9999-newpac/fanqiang
   port: 19000
   server: anytls2.864106.xyz
@@ -927,7 +808,7 @@ proxies:
   tls: true
   type: anytls
   udp: true
-- name: US美国(mibei77.com 米贝节点分享)_6
+- name: US美国(mibei77.com 米贝节点分享)_2
   network: ws
   port: 8080
   server: 104.21.70.21
@@ -940,63 +821,8 @@ proxies:
     headers:
       Host: lucky-lab-ac6d.caveyi8071.workers.dev
     path: /
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_7
-  port: 443
-  reality-opts:
-    public-key: g36Z7YIqJMJP-uv3DBr72X5jvfjyW1qIAxa8TkWmpmQ
-    short-id: ad6e08b22389abd2
-  server: 163.245.52.91
-  servername: d3-ee1.cloud-cdn.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-- name: US美国(mibei77.com 米贝节点分享)_8
-  network: ws
-  port: 8880
-  server: envato.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: baaa882d-ac50-4bba-bd8d-5486f7d34005
-  ws-opts:
-    headers:
-      Host: blue-water-924c.174-235.workers.dev
-    path: /
-- alpn:
-  - http/1.1
-  name: US美国(mibei77.com 米贝节点分享)_9
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-- alpn:
-  - http/1.1
-  name: US美国(mibei77.com 米贝节点分享)_10
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - client-fingerprint: chrome
-  name: US美国(mibei77.com 米贝节点分享)_11
+  name: US美国(mibei77.com 米贝节点分享)_3
   network: ws
   port: 8880
   server: 185.148.104.30
@@ -1010,36 +836,8 @@ proxies:
     headers:
       Host: vms.lifetime51.workers.dev
     path: /
-- alpn:
-  - http/1.1
-  name: US美国(mibei77.com 米贝节点分享)_12
-  password: mitivpn
-  port: 443
-  server: 167.82.76.27
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_13
-  port: 443
-  server: 23.166.40.27
-  servername: u695098u07fcba7ds79.kukuss.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - client-fingerprint: chrome
-  name: US美国(mibei77.com 米贝节点分享)_14
+  name: US美国(mibei77.com 米贝节点分享)_4
   network: ws
   port: 80
   server: 45.131.208.4
@@ -1054,125 +852,9 @@ proxies:
       Host: floral-thunder-10d3.82-67d.workers.dev
     path: /pyip=Telegram🇨🇳+@WangCai2
 - alpn:
-  - http/1.1
-  name: US美国(mibei77.com 米贝节点分享)_15
-  password: mitivpn
-  port: 443
-  server: 167.82.76.27
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-- alpn:
-  - http/1.1
-  name: US美国(mibei77.com 米贝节点分享)_16
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /
-- name: US美国(mibei77.com 米贝节点分享)_17
-  password: mitivpn
-  port: 443
-  server: 199.232.78.101
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-1.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: US美国(mibei77.com 米贝节点分享)_18
-  password: mitivpn
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: US美国(mibei77.com 米贝节点分享)_19
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_20
-  port: 443
-  server: s880.gogocs.xyz
-  servername: u695098u07fcba7ds79.kukuss.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_21
-  port: 443
-  server: s881.wagahaha.xyz
-  servername: u695098u07fcba7ds79.kukuss.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: US美国(mibei77.com 米贝节点分享)_22
-  password: mitivpn
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
-    path: /---@npv_vpn11---@npv_vpn11/---@npv_vpn11---@npv_vpn11/---@npv_vpn11---@npv_vpn11/NLSus---@npv_vpn11---@npv_vpn11/---@npv_vpn11---@npv_vpn11/---@npv_vpn11---@npv_vpn11
-- name: US美国(mibei77.com 米贝节点分享)_23
-  password: mitivpn
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
-- alpn:
   - h3
   - h2
-  name: US美国(mibei77.com 米贝节点分享)_24
+  name: US美国(mibei77.com 米贝节点分享)_5
   network: ws
   port: 443
   server: saas.sin.fan
@@ -1186,61 +868,7 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome
-- name: US美国(mibei77.com 米贝节点分享)_25
-  password: mitivpn
-  port: 443
-  server: 199.232.78.160
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-2.global.ssl.fastly.net
-    path: /
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: US美国(mibei77.com 米贝节点分享)_26
-  network: ws
-  port: 443
-  server: saas.sin.fan
-  servername: snip.edgeoneai.cc.cd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-- name: US美国(mibei77.com 米贝节点分享)_27
-  password: mitivpn
-  port: 443
-  server: 167.82.76.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net
-    path: /
-- name: US美国(mibei77.com 米贝节点分享)_28
-  password: mitivpn
-  port: 443
-  server: 167.82.76.27
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-- name: US美国(mibei77.com 米贝节点分享)_29
+- name: US美国(mibei77.com 米贝节点分享)_6
   network: ws
   port: 8080
   server: 104.21.70.21
@@ -1253,7 +881,7 @@ proxies:
     headers:
       Host: lucky-lab-ac6d.caveyi8071.workers.dev
     path: /rN50nmm9L1DeY73C?ed=2560
-- name: US美国(mibei77.com 米贝节点分享)_30
+- name: US美国(mibei77.com 米贝节点分享)_7
   network: ws
   port: 8080
   server: 172.67.203.138
@@ -1267,8 +895,434 @@ proxies:
     headers:
       Host: server17.peekconfig1.workers.dev
     path: /eyJqdW5rIjoidzY2QTdySkdOeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)_8
+  network: ws
+  port: 8880
+  server: 104.21.0.115
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
+  ws-opts:
+    headers:
+      Host: muddy-queen-cdda.181-cf9.workers.dev
+    path: /
+- alpn:
+  - h2
+  name: US美国(mibei77.com 米贝节点分享)_9
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: US美国(mibei77.com 米贝节点分享)_10
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
+- alpn:
+  - h2
+  name: US美国(mibei77.com 米贝节点分享)_11
+  network: xhttp
+  port: 443
+  server: dey.lnmarketplace.net
+  servername: dey.lnmarketplace.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  xhttp-opts:
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    path: /kavir
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_12
+  port: 10829
+  server: 198.12.124.74
+  servername: u695098u5e20ed1cs709.gogocs.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- name: US美国(mibei77.com 米贝节点分享)_13
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chrome
+- name: US美国(mibei77.com 米贝节点分享)_14
+  network: ws
+  port: 8880
+  server: 155.46.167.30
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime50.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_15
+  network: ws
+  port: 80
+  server: 172.67.183.52
+  servername: 172.67.183.52
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  ws-opts:
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+    path: /vl/2INL39K32mKsOBKt?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)_16
+  network: ws
+  port: 8880
+  server: 80.93.202.40
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime02.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_17
+  network: ws
+  port: 80
+  server: 104.21.56.90
+  servername: 104.21.56.90
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  ws-opts:
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+    path: /vl/2INL39K32mKsOBKt?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)_18
+  network: ws
+  port: 80
+  server: 104.21.56.90
+  servername: 104.21.56.90
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  ws-opts:
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+    path: /vl/2INL39K32mKsOBKt?ed=2560
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_19
+  network: ws
+  port: 80
+  server: 172.67.183.52
+  servername: 172.67.183.52
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  ws-opts:
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+    path: /vl/2INL39K32mKsOBKt?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)_20
+  network: ws
+  port: 8880
+  server: 63.141.128.30
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime42.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_21
+  network: ws
+  port: 443
+  server: 165.215.250.16
+  servername: icy-wildflower-2590.lihuifeng595.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
+  ws-opts:
+    headers:
+      Host: icy-wildflower-2590.lihuifeng595.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_22
+  network: ws
+  port: 30021
+  server: 128.241.25.11
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 339cda3d-79a5-4d37-8ad8-eddc130c992a
+  ws-opts:
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    path: /@Marisa_kristi
+- name: US美国(mibei77.com 米贝节点分享)_23
+  network: ws
+  port: 8880
+  server: 155.46.213.30
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_24
+  port: 10829
+  server: 192.227.169.125
+  servername: u695098u764943ccs478.gogocs.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  name: US美国(mibei77.com 米贝节点分享)_25
+  network: xhttp
+  port: 443
+  server: 104.21.207.202
+  servername: b33ec4a1s226.fuhuovps.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  xhttp-opts:
+    host: b33ec4a1s226.fuhuovps.xyz
+    path: e0d9cd6ea04ecda957b4ca0869e038af
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_26
+  port: 10829
+  server: 103.173.155.212
+  servername: u695098u4d99b056s591.csgfw.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_27
+  port: 57667
+  server: 195.170.172.139
+  servername: u695098u6b6f0dd0s2057.gogocs.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- cipher: chacha20-ietf-poly1305
+  name: US美国(mibei77.com 米贝节点分享)_28
+  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
+  port: 35601
+  server: gw.lydwan.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_29
+  network: ws
+  port: 8080
+  server: 172.67.210.250
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: f85183cf-af02-4656-b1e9-3a61dced201f
+  ws-opts:
+    headers:
+      Host: freeworld.aliaicode47649.workers.dev
+    path: /vl/uyXT65o0H9U3hDBrVjJ9E?ed=2560
+- name: US美国(mibei77.com 米贝节点分享)_30
+  network: ws
+  port: 80
+  server: 91.206.71.8
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  ws-opts:
+    headers:
+      Host: round-haze-8783.294.workers.dev
+    path: /pyip=Telegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   name: US美国(mibei77.com 米贝节点分享)_31
+  network: ws
+  port: 2087
+  server: 172.67.79.160
+  servername: cvhpyn.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  ws-opts:
+    headers:
+      Host: cvhpyn.pages.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_32
+  network: ws
+  port: 80
+  server: 91.206.71.8
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  ws-opts:
+    headers:
+      Host: round-haze-8783.294.workers.dev
+    path: /pyip=Telegram🇨🇳+@WangCai2
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_33
+  port: 443
+  reality-opts:
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  server: 157.228.150.34
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_34
+  network: ws
+  port: 443
+  server: 162.159.135.234
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_35
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  ws-opts:
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+    path: /@Marisa_kristi
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_36
+  network: ws
+  port: 28863
+  server: 129.153.71.28
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 572b2f63-62b5-4e79-a6c8-d2211bf33576
+  ws-opts:
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+    path: /@Marisa_kristi
+- name: US美国(mibei77.com 米贝节点分享)_37
+  network: ws
+  port: 443
+  server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  servername: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+  ws-opts:
+    headers:
+      Host: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
+    path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_38
   network: ws
   port: 443
   server: 86153507-1976-48f1-ac86-e8ab274470a8.fly.dev
@@ -1280,10 +1334,34 @@ proxies:
   uuid: 0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
   ws-opts:
     path: /ws/0b3c3f4f-843a-5b0a-98fe-132c88fbefc0
-- name: US美国(mibei77.com 米贝节点分享)_32
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_39
+  port: 2053
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  server: 47.80.19.173
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+- name: US美国(mibei77.com 米贝节点分享)_40
   password: humanity
   port: 443
-  server: 172.67.231.254
+  server: 104.18.32.47
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: US美国(mibei77.com 米贝节点分享)_41
+  password: humanity
+  port: 443
+  server: 162.159.253.41
   skip-cert-verify: true
   sni: www.calmlunch.com
   type: trojan
@@ -1292,42 +1370,98 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: US美国(mibei77.com 米贝节点分享)_33
+- name: US美国(mibei77.com 米贝节点分享)_42
+  password: humanity
+  port: 443
+  server: 104.16.72.50
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: US美国(mibei77.com 米贝节点分享)_43
   network: ws
-  port: 8880
-  server: 104.17.21.32
+  port: 8080
+  server: 172.67.171.191
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
+  uuid: 0b2ea024-3ffd-46a7-87ce-86cbb79d7a48
   ws-opts:
     headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_34
+      Host: server18.peekconfig2.workers.dev
+    path: /eyJqdW5rIjoiT3FNeW1sMVdGVHlvNTIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
+- name: US美国(mibei77.com 米贝节点分享)_44
+  network: ws
   port: 443
-  server: s249.freessr.bid
-  servername: u695098u47d2e9bes71.gogocs.xyz
+  server: 216.24.57.1
+  servername: somersby.pt.ex33r.eu.cc
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: US美国(mibei77.com 米贝节点分享)_35
+  uuid: 974c2588-c1cd-43ac-8823-ce3d879b09fd
+  ws-opts:
+    path: /id-amz
+- name: US美国(mibei77.com 米贝节点分享)_45
+  network: ws
+  port: 8880
+  server: 172.67.150.235
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
+  ws-opts:
+    headers:
+      Host: muddy-queen-cdda.181-cf9.workers.dev
+    path: /
+- name: US美国(mibei77.com 米贝节点分享)_46
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  port: 7443
+  server: me17.msjia8844.site
+  skip-cert-verify: true
+  sni: me17.msjia8844.site
+  type: hysteria2
+  udp: true
+- name: US美国(mibei77.com 米贝节点分享)_47
+  password: humanity
   port: 443
-  server: 179.61.138.177
-  servername: u695098u47d2e9bes71.gogocs.xyz
+  server: 104.18.32.47
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- client-fingerprint: chrome
+  name: US美国(mibei77.com 米贝节点分享)_48
+  network: ws
+  port: 443
+  server: 139.84.242.103
+  servername: vlso5.1d.mom
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
+- flow: xtls-rprx-vision
+  name: US美国(mibei77.com 米贝节点分享)_49
+  port: 443
+  server: 160.25.74.91
+  servername: u695098ue79dbcd4s783.gogocs.xyz
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1338,17 +1472,20 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1356,7 +1493,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1366,42 +1502,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1438,21 +1560,38 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1460,7 +1599,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1470,42 +1608,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1542,6 +1666,20 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1550,17 +1688,20 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1568,7 +1709,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1578,42 +1718,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1650,22 +1776,39 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1673,7 +1816,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1683,42 +1825,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1755,22 +1883,39 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1778,7 +1923,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1788,42 +1932,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1860,22 +1990,39 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -1883,7 +2030,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -1893,42 +2039,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -1965,6 +2097,20 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1987,17 +2133,20 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 荷兰(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)
+  - 阿拉伯(mibei77.com 米贝节点分享)_1
+  - 阿拉伯(mibei77.com 米贝节点分享)_2
+  - 奥地利(mibei77.com 米贝节点分享)
+  - 芬兰(mibei77.com 米贝节点分享)
+  - 立陶宛(mibei77.com 米贝节点分享)
+  - 罗马尼亚(mibei77.com 米贝节点分享)
+  - 南非(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)
+  - 挪威(mibei77.com 米贝节点分享)_1
   - 乌克兰(mibei77.com 米贝节点分享)
-  - 西班牙(mibei77.com 米贝节点分享)
+  - 乌克兰(mibei77.com 米贝节点分享)_1
   - 伊朗(mibei77.com 米贝节点分享)
-  - 伊朗(mibei77.com 米贝节点分享)_1
   - AU澳大利亚(mibei77.com 米贝节点分享)
-  - AU澳大利亚(mibei77.com 米贝节点分享)_1
-  - AU澳大利亚(mibei77.com 米贝节点分享)_2
-  - AU澳大利亚(mibei77.com 米贝节点分享)_3
-  - AU澳大利亚(mibei77.com 米贝节点分享)_4
-  - AU澳大利亚(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)
   - CA加拿大(mibei77.com 米贝节点分享)_1
   - CA加拿大(mibei77.com 米贝节点分享)_2
@@ -2005,7 +2154,6 @@ proxy-groups:
   - CA加拿大(mibei77.com 米贝节点分享)_4
   - CA加拿大(mibei77.com 米贝节点分享)_5
   - CA加拿大(mibei77.com 米贝节点分享)_6
-  - CA加拿大(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)
   - DE德国(mibei77.com 米贝节点分享)_1
   - DE德国(mibei77.com 米贝节点分享)_2
@@ -2015,42 +2163,28 @@ proxy-groups:
   - DE德国(mibei77.com 米贝节点分享)_6
   - DE德国(mibei77.com 米贝节点分享)_7
   - DE德国(mibei77.com 米贝节点分享)_8
-  - DE德国(mibei77.com 米贝节点分享)_9
-  - DE德国(mibei77.com 米贝节点分享)_10
   - FR法国(mibei77.com 米贝节点分享)
   - FR法国(mibei77.com 米贝节点分享)_1
   - GB英国(mibei77.com 米贝节点分享)
   - GB英国(mibei77.com 米贝节点分享)_1
+  - GB英国(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)
   - HK香港(mibei77.com 米贝节点分享)_1
   - HK香港(mibei77.com 米贝节点分享)_2
   - HK香港(mibei77.com 米贝节点分享)_3
   - HK香港(mibei77.com 米贝节点分享)_4
   - HK香港(mibei77.com 米贝节点分享)_5
-  - HK香港(mibei77.com 米贝节点分享)_6
-  - HK香港(mibei77.com 米贝节点分享)_7
-  - HK香港(mibei77.com 米贝节点分享)_8
-  - HK香港(mibei77.com 米贝节点分享)_9
-  - HK香港(mibei77.com 米贝节点分享)_10
-  - HK香港(mibei77.com 米贝节点分享)_11
-  - HK香港(mibei77.com 米贝节点分享)_12
-  - HK香港(mibei77.com 米贝节点分享)_13
-  - HK香港(mibei77.com 米贝节点分享)_14
-  - HK香港(mibei77.com 米贝节点分享)_15
-  - HK香港(mibei77.com 米贝节点分享)_16
-  - HK香港(mibei77.com 米贝节点分享)_17
   - JP日本(mibei77.com 米贝节点分享)
-  - JP日本(mibei77.com 米贝节点分享)_1
-  - JP日本(mibei77.com 米贝节点分享)_2
-  - JP日本(mibei77.com 米贝节点分享)_3
-  - JP日本(mibei77.com 米贝节点分享)_4
-  - JP日本(mibei77.com 米贝节点分享)_5
+  - NL荷兰(mibei77.com 米贝节点分享)
+  - NL荷兰(mibei77.com 米贝节点分享)_1
+  - NL荷兰(mibei77.com 米贝节点分享)_2
+  - NL荷兰(mibei77.com 米贝节点分享)_3
+  - RU俄罗斯(mibei77.com 米贝节点分享)
+  - RU俄罗斯(mibei77.com 米贝节点分享)_1
+  - RU俄罗斯(mibei77.com 米贝节点分享)_2
+  - RU俄罗斯(mibei77.com 米贝节点分享)_3
   - SG新加坡(mibei77.com 米贝节点分享)
   - SG新加坡(mibei77.com 米贝节点分享)_1
-  - SG新加坡(mibei77.com 米贝节点分享)_2
-  - SG新加坡(mibei77.com 米贝节点分享)_3
-  - SG新加坡(mibei77.com 米贝节点分享)_4
-  - TW台湾(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)_1
   - US美国(mibei77.com 米贝节点分享)_2
@@ -2087,6 +2221,20 @@ proxy-groups:
   - US美国(mibei77.com 米贝节点分享)_33
   - US美国(mibei77.com 米贝节点分享)_34
   - US美国(mibei77.com 米贝节点分享)_35
+  - US美国(mibei77.com 米贝节点分享)_36
+  - US美国(mibei77.com 米贝节点分享)_37
+  - US美国(mibei77.com 米贝节点分享)_38
+  - US美国(mibei77.com 米贝节点分享)_39
+  - US美国(mibei77.com 米贝节点分享)_40
+  - US美国(mibei77.com 米贝节点分享)_41
+  - US美国(mibei77.com 米贝节点分享)_42
+  - US美国(mibei77.com 米贝节点分享)_43
+  - US美国(mibei77.com 米贝节点分享)_44
+  - US美国(mibei77.com 米贝节点分享)_45
+  - US美国(mibei77.com 米贝节点分享)_46
+  - US美国(mibei77.com 米贝节点分享)_47
+  - US美国(mibei77.com 米贝节点分享)_48
+  - US美国(mibei77.com 米贝节点分享)_49
   type: select
 rule-providers:
   Apple:
